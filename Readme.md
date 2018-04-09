@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ala Yakushava](https://up.htmlacademy.ru/adaptive/14/user/419137).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
 
 ---
 
