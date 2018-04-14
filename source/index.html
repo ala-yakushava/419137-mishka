@@ -162,20 +162,20 @@
 
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru">
+      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="modal__check-size check-size">
           <legend class="check-size__legend">Выберите размер:</legend>
           <ul class="check-size__list">
             <li class="check-size__item">
-              <input class="visually-hidden" type="radio" name="size" value="small" id="size-small" checked>
+              <input class="check-size__field-radio visually-hidden" type="radio" name="size" value="small" id="size-small" checked>
               <label class="check-size__label" for="size-small">S</label>
             </li>
             <li class="check-size__item">
-              <input class="visually-hidden" type="radio" name="size" value="middle" id="size-middle">
+              <input class="check-size__field-radio visually-hidden" type="radio" name="size" value="middle" id="size-middle">
               <label class="check-size__label" for="size-middle">M</label>
             </li>
             <li class="check-size__item">
-              <input class="visually-hidden" type="radio" name="size" value="large" id="size-large">
+              <input class="check-size__field-radio visually-hidden" type="radio" name="size" value="large" id="size-large">
               <label class="check-size__label" for="size-large">L</label>
             </li>
           </ul>
