@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров: «Мишка»</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="#" width="100" height="100" alt="Интернет-магазин «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-catalog">
+
+      <h1 class="page-title">Каталог товаров</h1>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item preview">
+            <a class="preview__link" href="#">
+              <h3 class="preview__title">Зайчик-попрыгайчик</h3>
+              <img class="preview__image" src="#" width="100" height="100" alt="Зайчик-попрыгайчик">
+              <span class="preview__desc">Рост 30 см, вес 200 г</span>
+            </a>
+            <div>
+              <b class="preview__price">1200 руб.</b>
+              <a class="preview__order button" href="#"><span class="visually-hidden">Заказать</span></a>
+            </div>
+          </li>
+          <li class="catalog__item preview">
+            <a class="preview__link" href="#">
+              <h3 class="preview__title">Корзинка для белья</h3>
+              <img class="preview__image" src="#" width="100" height="100" alt="Корзинка для белья">
+              <span class="preview__desc">Диаметр 15 см, высота 10 см</span>
+            </a>
+            <div>
+              <b class="preview__price">690 руб.</b>
+              <a class="preview__order button" href="#"><span class="visually-hidden">Заказать</span></a>
+            </div>
+          </li>
+          <li class="catalog__item preview">
+            <a class="preview__link" href="#">
+              <h3 class="preview__title">Большая корзинка для игрушек</h3>
+              <img class="preview__image" src="#" width="100" height="100" alt="Большая корзинка для игрушек">
+              <span class="preview__desc">Диаметр 30 см, высота 30 см</span>
+            </a>
+            <div>
+              <b class="preview__price">1500 руб.</b>
+              <a class="preview__cart" href="#"><span class="visually-hidden">Заказать</span></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video">
+        <h2 class="video__title">Процесс производства</h2>
+        <video class="video__player" width="100" height="100" poster="video/duel.jpg" autoplay>
+          <source src="#">
+        </video>
+        <div class="video__desc">
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        </div>
+        <a class="video__order button" href="#">Сделать заказ</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"><span class="visually-hidden">Мы в Твиттере</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link button" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Academy</span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
