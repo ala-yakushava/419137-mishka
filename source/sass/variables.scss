@@ -1,0 +1,34 @@
+// Общие семантические цвета
+$gray--lightest:       #ffffff;
+$gray--lighten:        #f1f1f1;
+$gray--light:          #ececec;
+$gray:                 #cccccc;
+$gray--dark:           #444444;
+$gray--darkest:        #000000;
+
+// Акцентные цвета
+$color-main--light:    #63d1bb;
+$color-main:           #62d1ba;
+$color-main--dark:     #56c3b2;
+
+// Цвета главной кнопки
+$btn-main-bg:          $gray--lightest;
+$btn-main-color:       $gray--dark;
+$btn-main-border:      $gray--dark;
+
+// Цвета текста
+$text-color:           $gray-dark;
+$text-color--title:    $gray--darkest;
+$text-color--muted:    $color-main--light;
+$text-color--invert:   $gray--lightest;
+
+// Шрифты
+$font-size:            15px;
+$font-size--h1:        27px;
+$font-size--h2:        25px;
+$font-size--btn:       17px;
+$font-size--small:     13px;
+
+$line-height:          30px;
+
+$font-family: 'Open Sans', Arial, sans-serif;
