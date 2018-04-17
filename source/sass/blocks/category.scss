@@ -1,0 +1,32 @@
+.category__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.category__link {
+  display: flex;
+  height: 103px;
+  padding-left: 25px;
+
+  font-size: 19px;
+  line-height: 103px;
+  font-weight: 700;
+  color: $gray--lightest;
+
+  background-color: $color-main--light;
+
+  &--toys {
+    background-color: $color-main--dark;
+  }
+
+  &:hover,
+  &:focus {
+
+  }
+
+  &:active {
+    color: rgba($gray--lightest, 0.3);
+  }
+}

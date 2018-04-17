@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;
+  width: 256px;
+  height: 48px;
+
+  font-size: $font-size--btn;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $btn-main-color;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 2px solid $btn-main-border;
+  background-color: $btn-main-bg;
+
+  &:hover,
+  &:focus {
+    color: $gray--lightest;
+
+    border: 2px solid $gray--dark;
+    background-color: $gray--dark;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
+}

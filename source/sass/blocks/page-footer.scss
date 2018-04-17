@@ -1,0 +1,15 @@
+.page-footer {
+  padding: 0 30px;
+  background-color: $gray--lighten;
+}
+
+.page-footer__copyright {
+  height: 80px;
+}
+
+.page-footer__copyright-link {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $gray--darkest;
+}

@@ -1,0 +1,20 @@
+.contacts__title {
+  font-size: $font-size--h2;
+  font-weight: 700;
+  color: $gray--darkest;
+}
+
+.contacts__e-mail {
+  border-bottom: 1px solid $color-main--light;
+
+  &:hover,
+  &:focus {
+    color: $color-main--dark;
+    border-bottom: 1px solid $color-main--dark;
+  }
+
+  &:active {
+    color: rgba($color-main--dark, 0.3);
+    border-bottom: 1px solid rgba($color-main--dark, 0.3);
+  }
+}

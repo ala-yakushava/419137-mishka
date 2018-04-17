@@ -1,0 +1,25 @@
+.reviews__title {
+  font-size: $font-size--h2;
+  font-weight: 700;
+  color: $gray--darkest;
+}
+
+.reviews__author {
+  font-style: normal;
+}
+
+.reviews__author-name {
+  font-size: $font-size--btn;
+  line-height: 24px;
+  font-weight: 700;
+  color: $gray--darkest;
+}
+
+.reviews__button {
+  display: inline-block;
+  width: 128px;
+  height: 50px;
+
+  background-color: $btn-main-bg;
+  border: 2px solid $gray--light;
+}

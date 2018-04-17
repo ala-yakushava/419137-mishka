@@ -1,0 +1,28 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-list__item {
+  height: 80px;
+  padding-left: 75px;
+  border-bottom: 1px solid $gray--light;
+}
+
+.user-list__link {
+  font-size: $font-size--btn;
+  line-height: 80px;
+  font-weight: 700;
+  color: $gray--darkest;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

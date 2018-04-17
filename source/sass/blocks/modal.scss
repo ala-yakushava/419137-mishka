@@ -1,0 +1,25 @@
+.modal__title {
+  font-size: $font-size--h2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray--darkest;
+}
+
+.modal__add-order {
+  color: $gray--lightest;
+
+  border: 2px solid $color-main--light;
+  background-color: $color-main--light;
+
+  &:hover,
+  &:focus {
+    color: $gray--lightest;
+
+    border: 2px solid $color-main--light;
+    background-color: $color-main--light;
+  }
+
+  &:active {
+    color: rgba($gray--lightest, 0.3);
+  }
+}
