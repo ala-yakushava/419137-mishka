@@ -1,11 +1,11 @@
 .logo {
 
-    &[href]:hover,
-    &[href]:focus {
+    &--link:hover,
+    &--link:focus {
       opacity: 0.6;
     }
 
-    &[href]:active {
+    &--link:active {
       opacity: 0.3;
     }
 }
