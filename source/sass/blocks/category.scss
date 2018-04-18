@@ -7,26 +7,24 @@
 
 .category__link {
   display: flex;
-  height: 103px;
-  padding-left: 25px;
 
-  font-size: 19px;
-  line-height: 103px;
+  padding: 25px;
+  padding-right: 50%;
+
+  font-size: $font-size--btn + 2px;
+  line-height: 24px;
   font-weight: 700;
-  color: $gray--lightest;
+  color: $text-color--invert;
 
-  background-color: $color-main--light;
+  &--interior {
+    background-color: $color-main--light;
+  }
 
   &--toys {
     background-color: $color-main--dark;
   }
 
-  &:hover,
-  &:focus {
-
-  }
-
   &:active {
-    color: rgba($gray--lightest, 0.3);
+    color: rgba($text-color--invert, 0.3);
   }
 }

@@ -1,7 +1,12 @@
 .contacts__title {
-  font-size: $font-size--h2;
-  font-weight: 700;
-  color: $gray--darkest;
+  margin: 30px;
+
+  font-size: $font-size--h2 - 7px;
+  color: $text-color--title;
+}
+
+.contacts__list {
+  margin: 30px;
 }
 
 .contacts__e-mail {
@@ -17,4 +22,9 @@
     color: rgba($color-main--dark, 0.3);
     border-bottom: 1px solid rgba($color-main--dark, 0.3);
   }
+}
+
+.contacts__write {
+  width: calc(100% - 60px);
+  margin: 40px 30px;
 }

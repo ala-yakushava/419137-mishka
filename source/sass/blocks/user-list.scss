@@ -6,14 +6,15 @@
 }
 
 .user-list__item {
-  height: 80px;
+  padding: 25px;
   padding-left: 75px;
+
   border-bottom: 1px solid $gray--light;
 }
 
 .user-list__link {
   font-size: $font-size--btn;
-  line-height: 80px;
+  line-height: 24px;
   font-weight: 700;
   color: $gray--darkest;
 

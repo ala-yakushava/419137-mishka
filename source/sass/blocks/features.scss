@@ -1,7 +1,13 @@
+.features__wrapper {
+  margin: 30px;
+  margin-bottom: 60px;
+}
+
 .features__title {
+  margin: 0;
+
   font-size: $font-size--h2;
-  font-weight: 700;
-  color: $gray--darkest;
+  color: $text-color--title;
 }
 
 .features__list {
@@ -11,9 +17,13 @@
   list-style: none;
 }
 
+.features__item {
+  padding-top: 80px;
+}
+
 .features__item-desc {
   font-size: $font-size--btn;
+  line-height: 20px;
   font-weight: 700;
   color: $gray--darkest;
-  line-height: 20px;
 }

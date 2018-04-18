@@ -1,10 +1,12 @@
 .button {
   display: inline-block;
-  width: 256px;
-  height: 48px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
 
+  font: inherit;
   font-size: $font-size--btn;
-  line-height: 48px;
+  line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   color: $btn-main-color;
@@ -16,7 +18,7 @@
 
   &:hover,
   &:focus {
-    color: $gray--lightest;
+    color: $text-color--invert;
 
     border: 2px solid $gray--dark;
     background-color: $gray--dark;

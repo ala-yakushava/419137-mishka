@@ -1,7 +1,17 @@
+.reviews__wrapper {
+  margin: 30px;
+  margin-bottom: 60px;
+}
+
 .reviews__title {
+  margin: 0;
+
   font-size: $font-size--h2;
-  font-weight: 700;
-  color: $gray--darkest;
+  color: $text-color--title;
+}
+
+.reviews__item {
+  margin: 0;
 }
 
 .reviews__author {
@@ -15,11 +25,16 @@
   color: $gray--darkest;
 }
 
+.reviews__wrapper-btn {
+  display: flex;
+  margin: 35px 0;
+}
+
 .reviews__button {
   display: inline-block;
-  width: 128px;
+  width: 50%;
   height: 50px;
 
   background-color: $btn-main-bg;
-  border: 2px solid $gray--light;
+  border: 1px solid $gray--light;
 }
