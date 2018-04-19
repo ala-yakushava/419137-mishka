@@ -1,0 +1,33 @@
+.best-sale {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.best-sale__title {
+  margin: 0;
+
+  font-size: $font-size--h2;
+  color: $text-color--title;
+}
+
+.best-sale__specialty {
+  font-size: $font-size--btn;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $text-color--muted;
+}
+
+.best-sale__table {
+  margin: 20px 0;
+}
+
+.best-sale__price {
+  padding: 20px;
+
+  font-size: $font-size--btn;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}

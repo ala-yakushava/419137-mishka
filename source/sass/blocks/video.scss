@@ -1,0 +1,27 @@
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 60px;
+  padding-bottom: 30px;
+
+  border: 1px solid $gray--light;
+}
+
+.video__title {
+  margin-left: 90px;
+
+  font-size: $font-size--btn;
+  line-height: 24px;
+  color: $text-color--title;
+}
+
+.video__desc {
+  padding: 30px;
+
+  font-size: $font-size--small;
+  line-height: 24px;
+}
+
+.video__order {
+  margin: 0 30px;
+}

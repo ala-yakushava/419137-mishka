@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 15px;
+
+  font-size: $font-size--btn;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray--dark;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 2px solid $gray--dark;
+  background-color: $white;
+
+  &:hover,
+  &:focus {
+    color: $text-color--invert;
+
+    border: 2px solid $gray--dark;
+    background-color: $gray--dark;
+  }
+
+  &:active {
+    color: $gray;
+  }
+}

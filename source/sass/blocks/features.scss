@@ -1,0 +1,29 @@
+.features__wrapper {
+  margin: 30px;
+  margin-bottom: 60px;
+}
+
+.features__title {
+  margin: 0;
+
+  font-size: $font-size--h2;
+  color: $text-color--title;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  padding-top: 80px;
+}
+
+.features__item-desc {
+  font-size: $font-size--btn;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
+}

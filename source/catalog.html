@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров: «Мишка»</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="#" width="100" height="100" alt="Интернет-магазин «Мишка»">
+      <a class="page-header__logo logo logo--link" href="index.html">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -45,7 +47,7 @@
               <a class="minicard__link" href="#">
                 <img class="minicard__image" src="#" width="100" height="100" alt="Зайчик-попрыгайчик">
               </a>
-              <div class="minicard__wrapper">
+              <div class="minicard__wrapper minicard__wrapper--line">
                 <a class="minicard__link" href="#">
                   <h3 class="minicard__title">Зайчик-попрыгайчик</h3>
                 </a>
@@ -53,7 +55,7 @@
               </div>
               <div class="minicard__wrapper">
                 <b class="minicard__price">1200 руб.</b>
-                <a class="minicard__order button" href="#"><span class="visually-hidden">Заказать</span></a>
+                <a class="minicard__order" href="#"><span class="visually-hidden">Заказать</span></a>
               </div>
             </article>
           </li>
@@ -62,7 +64,7 @@
               <a class="minicard__link" href="#">
                 <img class="minicard__image" src="#" width="100" height="100" alt="Корзинка для белья">
               </a>
-              <div class="minicard__wrapper">
+              <div class="minicard__wrapper minicard__wrapper--line">
                 <a class="minicard__link" href="#">
                   <h3 class="minicard__title">Корзинка для белья</h3>
                 </a>
@@ -70,7 +72,7 @@
               </div>
               <div class="minicard__wrapper">
                 <b class="minicard__price">690 руб.</b>
-                <a class="minicard__order button" href="#"><span class="visually-hidden">Заказать</span></a>
+                <a class="minicard__order" href="#"><span class="visually-hidden">Заказать</span></a>
               </div>
             </article>
           </li>
@@ -79,7 +81,7 @@
               <a class="minicard__link" href="#">
                 <img class="minicard__image" src="#" width="100" height="100" alt="Большая корзинка для игрушек">
               </a>
-              <div class="minicard__wrapper">
+              <div class="minicard__wrapper minicard__wrapper--line">
                 <a class="minicard__link" href="#">
                   <h3 class="minicard__title">Большая корзинка для игрушек</h3>
                 </a>
@@ -87,7 +89,7 @@
               </div>
               <div class="minicard__wrapper">
                 <b class="minicard__price">1500 руб.</b>
-                <a class="minicard__order button" href="#"><span class="visually-hidden">Заказать</span></a>
+                <a class="minicard__order" href="#"><span class="visually-hidden">Заказать</span></a>
               </div>
             </article>
           </li>
@@ -95,14 +97,16 @@
       </section>
 
       <section class="video">
-        <h2 class="video__title">Процесс производства</h2>
-        <video class="video__player" width="100" height="100" poster="video/duel.jpg">
-          <source src="#">
-        </video>
-        <div class="video__desc">
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <div class="video__wrapper">
+          <h2 class="video__title">Процесс производства</h2>
+          <video class="video__player" width="100" height="100" poster="video/duel.jpg">
+            <source src="#">
+          </video>
+          <div class="video__desc">
+            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          </div>
+          <a class="video__order button" href="#">Сделать заказ</a>
         </div>
-        <a class="video__order button" href="#">Сделать заказ</a>
       </section>
     </main>
 
@@ -122,7 +126,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link button" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Academy</span></a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
     </footer>

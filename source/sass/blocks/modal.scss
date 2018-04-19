@@ -1,0 +1,37 @@
+.modal {
+  padding: 35px 30px 40px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__title {
+  font-size: $font-size--h2;
+  text-transform: uppercase;
+  color: $text-color--title;
+  text-align: center;
+}
+
+.modal__add-order {
+  font-family: $font-family;
+  font-size: $font-size--btn;
+  line-height: 20px;
+  color: $text-color--invert;
+
+  border: 2px solid $color-main--light;
+  background-color: $color-main--light;
+
+  &:hover,
+  &:focus {
+    color: $text-color--invert;
+
+    border: 2px solid $color-main--light;
+    background-color: $color-main--light;
+  }
+
+  &:active {
+    color: rgba($text-color--invert, 0.3);
+  }
+}

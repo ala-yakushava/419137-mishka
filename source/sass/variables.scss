@@ -1,0 +1,34 @@
+// Общие семантические цвета
+$white:                #ffffff;
+$gray--lighten:        #f1f1f1;
+$gray--light:          #ececec;
+$gray:                 #8d8d8d;
+$gray--dark:           #444444;
+$black:                #000000;
+
+// Акцентные цвета
+$color-main--light:    #63d1bb;
+$color-main:           #62d1ba;
+$color-main--dark:     #56c3b2;
+
+// Цвета текста
+$text-color:           $gray--dark;
+$text-color--title:    $black;
+$text-color--muted:    $color-main--light;
+$text-color--invert:   $white;
+
+// Шрифты
+$font-size:            15px;
+$font-size--h1:        27px;
+$font-size--h2:        25px;
+$font-size--btn:       17px;
+$font-size--small:     13px;
+
+$line-height:          30px;
+
+$font-family: "Open Sans", "Arial", sans-serif;
+
+// Размеры экрана:
+$screen-mobile:        320px;
+$screen-tablet:        768px;
+$screen-desktop:      1150px;

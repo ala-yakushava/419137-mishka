@@ -1,0 +1,35 @@
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__title {
+  margin: 30px;
+
+  font-size: $font-size--h2 - 7px;
+  color: $text-color--title;
+}
+
+.contacts__list {
+  margin: 30px;
+}
+
+.contacts__e-mail {
+  color: $text-color;
+  border-bottom: 1px solid $color-main--light;
+
+  &:hover,
+  &:focus {
+    color: $color-main--dark;
+    border-bottom: 1px solid $color-main--dark;
+  }
+
+  &:active {
+    color: rgba($color-main--dark, 0.3);
+    border-bottom: 1px solid rgba($color-main--dark, 0.3);
+  }
+}
+
+.contacts__write {
+  margin: 40px 30px;
+}

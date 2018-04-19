@@ -1,0 +1,29 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  padding: 25px;
+  padding-left: 75px;
+
+  border-bottom: 1px solid $gray--light;
+}
+
+.site-list__link {
+  font-size: $font-size--btn;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

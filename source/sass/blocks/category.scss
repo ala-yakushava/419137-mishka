@@ -1,0 +1,30 @@
+.category__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.category__link {
+  display: flex;
+
+  padding: 25px;
+  padding-right: 50%;
+
+  font-size: $font-size--btn + 2px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $text-color--invert;
+
+  &--interior {
+    background-color: $color-main--light;
+  }
+
+  &--toys {
+    background-color: $color-main--dark;
+  }
+
+  &:active {
+    color: rgba($text-color--invert, 0.3);
+  }
+}

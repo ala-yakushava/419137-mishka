@@ -1,0 +1,36 @@
+.minicard {
+  border: 1px solid $gray--light;
+}
+
+.minicard__wrapper {
+  margin: 0 25px;
+  padding: 25px 0;
+
+  &--line {
+    border-bottom: 1px solid $gray--light;
+  }
+}
+
+.minicard__title {
+  font-size: $font-size--btn;
+  line-height: 24px;
+  color: $text-color--title;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.minicard__desc {
+  font-size: $font-size--small;
+}
+
+.minicard__price {
+  line-height: 24px;
+  color: $text-color--title;
+}

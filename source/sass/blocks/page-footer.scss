@@ -1,0 +1,18 @@
+.page-footer {
+  background-color: $gray--lighten;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.page-footer__copyright-link {
+  padding-right: 60px;
+
+  font-size: $font-size--btn + 2px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+}

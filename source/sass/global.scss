@@ -1,0 +1,22 @@
+body {
+  min-width: $screen-mobile;
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $gray--dark;
+
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

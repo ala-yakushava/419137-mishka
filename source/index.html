@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Мишка»</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo logo">
-        <img class="logo__image" src="#" width="100" height="100" alt="Интернет-магазин «Мишка»">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -35,7 +37,7 @@
 
     <main class="page-main">
 
-      <h1 class="page-title page-title--image">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-title page-title--image">Милые штуки ручной<br> работы для дома</h1>
 
       <div class="category">
         <ul class="category__list">
@@ -114,8 +116,10 @@
                 <a class="reviews__author-link" href="mailto:info@mimimishkashop.ru">@misssssiskras</a>
               </cite>
             </blockquote>
-            <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__button reviews__button--next" type="button">Следующий отзыв</button>
+            <div class="reviews__wrapper-btn">
+              <button class="reviews__button reviews__button--prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+              <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+            </div>
           </div>
           <a class="reviews__write button" href="#">Написать</a>
         </div>
@@ -157,7 +161,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link button" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Academy</span></a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
     </footer>
