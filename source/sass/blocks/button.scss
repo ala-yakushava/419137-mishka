@@ -1,20 +1,17 @@
 .button {
   display: inline-block;
-  width: 100%;
   padding: 15px;
-  box-sizing: border-box;
 
-  font: inherit;
   font-size: $font-size--btn;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: $btn-main-color;
+  color: $gray--dark;
   text-align: center;
   vertical-align: middle;
 
-  border: 2px solid $btn-main-border;
-  background-color: $btn-main-bg;
+  border: 2px solid $gray--dark;
+  background-color: $white;
 
   &:hover,
   &:focus {
@@ -25,6 +22,6 @@
   }
 
   &:active {
-    color: #8d8d8d;
+    color: $gray;
   }
 }

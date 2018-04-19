@@ -1,4 +1,6 @@
 .reviews__wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 30px;
   margin-bottom: 60px;
 }
@@ -18,11 +20,15 @@
   font-style: normal;
 }
 
+.reviews__author-link {
+  color: $text-color;
+}
+
 .reviews__author-name {
   font-size: $font-size--btn;
   line-height: 24px;
   font-weight: 700;
-  color: $gray--darkest;
+  color: $black;
 }
 
 .reviews__wrapper-btn {
@@ -35,6 +41,6 @@
   width: 50%;
   height: 50px;
 
-  background-color: $btn-main-bg;
+  background-color: $white;
   border: 1px solid $gray--light;
 }

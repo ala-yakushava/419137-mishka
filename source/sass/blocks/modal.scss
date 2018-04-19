@@ -2,6 +2,11 @@
   padding: 35px 30px 40px;
 }
 
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal__title {
   font-size: $font-size--h2;
   text-transform: uppercase;
@@ -10,6 +15,9 @@
 }
 
 .modal__add-order {
+  font-family: $font-family;
+  font-size: $font-size--btn;
+  line-height: 20px;
   color: $text-color--invert;
 
   border: 2px solid $color-main--light;

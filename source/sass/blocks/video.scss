@@ -1,4 +1,6 @@
 .video__wrapper {
+  display: flex;
+  flex-direction: column;
   margin: 0 30px 60px;
   padding-bottom: 30px;
 
@@ -21,6 +23,5 @@
 }
 
 .video__order {
-  width: calc(100% - 60px);
   margin: 0 30px;
 }

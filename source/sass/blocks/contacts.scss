@@ -1,3 +1,8 @@
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__title {
   margin: 30px;
 
@@ -10,6 +15,7 @@
 }
 
 .contacts__e-mail {
+  color: $text-color;
   border-bottom: 1px solid $color-main--light;
 
   &:hover,
@@ -25,6 +31,5 @@
 }
 
 .contacts__write {
-  width: calc(100% - 60px);
   margin: 40px 30px;
 }
