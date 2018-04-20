@@ -8,6 +8,9 @@
 }
 
 .modal__title {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: $font-size--h2;
   text-transform: uppercase;
   color: $text-color--title;
@@ -33,5 +36,23 @@
 
   &:active {
     color: rgba($text-color--invert, 0.3);
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .modal {
+    width: 350px;
+    margin: 0 auto;
+    padding: 45px 108px;
+  }
+
+  .modal__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .modal__title {
+    margin-bottom: 35px;
   }
 }

@@ -6,16 +6,27 @@
 }
 
 .check-size__legend {
+  display: block;
   margin: 0 auto;
+
+  text-align: center;
 }
 
 .check-size__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 30px 0;
   padding: 0;
 
   list-style: none;
+}
+
+.check-size__item {
+  margin-right: 7px;
+
+  &last-child {
+    margin-right: 0px;
+  }
 }
 
 .check-size__label {
@@ -44,4 +55,10 @@
 
 .check-size__field-radio:checked + .check-size__label {
   border: 2px solid $color-main;
+}
+
+@media (min-width: $screen-tablet) {
+  .check-size__list {
+    justify-content: center;
+  }
 }

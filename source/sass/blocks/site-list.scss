@@ -10,6 +10,10 @@
   padding-left: 75px;
 
   border-bottom: 1px solid $gray--light;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .site-list__link {
@@ -25,5 +29,33 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $screen-tablet) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+  }
+
+  .site-list__item {
+    width: 50%;
+    padding: 25px 0;
+
+    border-bottom: none;
+  }
+
+  .site-list__link {
+    font-size: $font-size;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .site-list__item {
+    &--hidden {
+      display: block;
+    }
   }
 }

@@ -1,9 +1,12 @@
 .features__wrapper {
+  display: flex;
+  flex-wrap: wrap;
   margin: 30px;
   margin-bottom: 60px;
 }
 
 .features__title {
+  width: 100%;
   margin: 0;
 
   font-size: $font-size--h2;
@@ -26,4 +29,50 @@
   line-height: 20px;
   font-weight: 700;
   color: $black;
+}
+
+@media (min-width: $screen-tablet) {
+  .features__wrapper {
+    margin: 55px 50px 80px;
+  }
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__list {
+    width: 300px;
+    padding-right: 34px;
+  }
+
+  .features__item {
+    padding-top: 100px;
+  }
+
+  .features__item-desc {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .features__wrapper {
+    width: 700px;
+    margin: 60px auto 85px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__list {
+    width: 300px;
+    padding-right: 50px;
+  }
+
+  .features__item {
+    padding-top: 110px;
+  }
 }
