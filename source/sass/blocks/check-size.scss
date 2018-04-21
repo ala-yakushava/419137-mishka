@@ -6,10 +6,7 @@
 }
 
 .check-size__legend {
-  display: block;
   margin: 0 auto;
-
-  text-align: center;
 }
 
 .check-size__list {
@@ -25,7 +22,7 @@
   margin-right: 7px;
 
   &last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 

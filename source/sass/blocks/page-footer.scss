@@ -12,15 +12,11 @@
   padding: 25px 0;
 
   border-bottom: 2px solid $gray--light;
-}
 
-.page-footer__item {
   &:first-child {
     display: none;
   }
-}
 
-.page-footer__item {
   &:last-child {
     border-bottom: none;
   }
@@ -56,6 +52,6 @@
 @media (min-width: $screen-desktop) {
   .page-footer__wrapper {
     width: 1050px;
-    margin: 0 auto;
+    margin: 100px auto 0;
   }
 }
