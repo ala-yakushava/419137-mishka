@@ -1,7 +1,7 @@
 .order {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  margin: 30px;
 }
 
 .order__fieldset {
@@ -26,6 +26,14 @@
   padding: 0;
 
   list-style: none;
+}
+
+.order__radio {
+  padding-left: 60px;
+}
+
+.order__checkbox {
+  padding-left: 60px;
 }
 
 .field-radio__label {
@@ -101,4 +109,126 @@
   font-size: $font-size--btn;
   line-height: 20px;
   color: $gray--dark;
+}
+
+@media (min-width: $screen-tablet) {
+  .order {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 50px;
+  }
+
+  .order__fieldset {
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .order__legend {
+    width: 167px;
+    padding: 10px 0;
+  }
+
+  .order__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+
+  .order__radio {
+    width: calc(100% - 167px);
+  }
+
+  .order__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .order__item {
+    padding: 10px 0;
+  }
+
+  .field-radio {
+    padding-left: 70px;
+  }
+
+  .field-checkbox {
+    width: 180px;
+    padding-left: 70px;
+  }
+
+  .field-text {
+    display: flex;
+    width: 100%;
+  }
+
+  .field-text__caption {
+    display: block;
+    width: 167px;
+  }
+
+  .order__name .field-text__value {
+    margin-left: 25px;
+  }
+
+  .order__send {
+    padding: 15px 30px;
+  }
+
+  .order__note {
+    margin-top: 50px;
+    margin-left: auto;
+    order: 2;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .order {
+    width: 1050px;
+    margin: 50px auto;
+  }
+
+  .order__legend {
+    width: 175px;
+    padding: 10px 0;
+
+    text-align: center;
+  }
+
+  .order__radio {
+    flex-direction: column;
+  }
+
+  .order__checkbox {
+    width: 875px;
+  }
+
+  .order__name {
+    width: 700px;
+  }
+
+  .field-text__caption {
+    width: 175px;
+
+    text-align: center;
+  }
+
+  .field-text .field-text__value {
+    width: 700px;
+  }
+
+  .field-text__area {
+    width: 700px;
+  }
+
+  .order__send {
+    margin-left: 175px;
+  }
+
+  .order__note {
+    margin-right: 175px;
+  }
 }
