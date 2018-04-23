@@ -21,7 +21,7 @@
 .check-size__item {
   margin-right: 7px;
 
-  &last-child {
+  &:last-child {
     margin-right: 0;
   }
 }
