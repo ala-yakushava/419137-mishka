@@ -33,12 +33,13 @@
 
 @media (min-width: $screen-tablet) {
   .features__wrapper {
-    margin: 55px 50px 80px;
+    justify-content: space-between;
+    width: $content-tablet;
+    margin: 55px auto 80px;
   }
 
   .features__list {
     width: 300px;
-    padding-right: 34px;
   }
 
   .features__item {

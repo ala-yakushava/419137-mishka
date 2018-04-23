@@ -36,7 +36,7 @@
 
 @media (min-width: $screen-tablet) {
   .video__wrapper {
-    width: 670px;
+    width: $content-tablet;
     margin: 55px auto 60px;
     padding-bottom: 50px;
   }
@@ -47,7 +47,7 @@
   }
 
   .video__player {
-    width: 670px;
+    width: $content-tablet;
     height: 455px;
     margin: 0;
     margin-bottom: 30px;
@@ -66,7 +66,7 @@
 @media (min-width: $screen-desktop) {
   .video__wrapper {
     display: block;
-    width: 1050px;
+    width: $content-desktop;
     margin: 55px auto 110px;
     padding-bottom: 0;
   }

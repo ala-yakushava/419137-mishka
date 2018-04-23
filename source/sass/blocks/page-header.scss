@@ -41,7 +41,7 @@
 
 @media (min-width: $screen-desktop) {
   .page-header__wrapper {
-    width: 1050px;
+    width: $content-desktop;
     margin: 0 auto;
   }
 

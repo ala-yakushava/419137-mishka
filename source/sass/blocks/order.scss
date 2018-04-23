@@ -187,7 +187,7 @@
 
 @media (min-width: $screen-desktop) {
   .order {
-    width: 1050px;
+    width: $content-desktop;
     margin: 50px auto;
   }
 
