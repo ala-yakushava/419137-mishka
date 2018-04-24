@@ -1,10 +1,20 @@
 .minicard {
   width: 260px;
+}
+
+.minicard__image {
+  width: 260px;
+  height: 195px;
+  margin-bottom: -10px;
+}
+
+.minicard__wrapper {
+  padding: 28px;
   border: 1px solid $gray--light;
 }
 
-.minicard__header {
-  margin: 0 25px 25px;
+.minicard__title {
+  margin: 0;
 }
 
 .minicard__title {
@@ -27,9 +37,8 @@
 }
 
 .minicard__footer {
-  margin: 0 25px;
-  padding: 15px 0;
-
+  margin-top: 20px;
+  padding-top: 20px;
   border-top: 1px solid $gray--light;
 }
 
@@ -41,7 +50,6 @@
 @media (min-width: $screen-tablet) {
   .minicard {
     display: flex;
-    flex-wrap: wrap;
     width: $content-tablet;
     height: 334px;
   }
@@ -51,19 +59,17 @@
     height: 334px;
   }
 
-  .minicard__header {
-    width: 280px;
-  }
-
-  .minicard__footer {
-    width: 100%;
-    margin-top: -75px;
-    margin-left: 365px;
+  .minicard__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: $screen-desktop) {
   .minicard {
+    display: block;
     width: 318px;
     height: auto;
   }
@@ -74,10 +80,10 @@
   }
 
   .minicard__header {
-    height: 95px;
+    height: 90px;
   }
 
   .minicard__footer {
-    margin: 0 25px;
+    margin-top: 0;
   }
 }
