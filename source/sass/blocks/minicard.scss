@@ -16,7 +16,7 @@
 .minicard__title {
   margin: 0;
 
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 24px;
   color: $text-color--title;
 
@@ -31,7 +31,7 @@
 }
 
 .minicard__desc {
-  font-size: $font-size--small;
+  font-size: $font-size--xsm;
 }
 
 .minicard__footer {
@@ -41,6 +41,7 @@
 }
 
 .minicard__price {
+  font-size: $font-size--sm;
   line-height: 24px;
   color: $text-color--title;
 }
@@ -62,6 +63,18 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+  }
+
+  .minicard__title {
+    font-size: $font-size--lg;
+  }
+
+  .minicard__desc {
+    font-size: $font-size--sm;
+  }
+
+  .minicard__price {
+    font-size: $font-size--md;
   }
 }
 

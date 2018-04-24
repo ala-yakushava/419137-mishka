@@ -8,7 +8,7 @@
 .reviews__title {
   margin: 0;
 
-  font-size: $font-size--h2;
+  font-size: $font-size--sm-title;
   color: $text-color--title;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .reviews__author-name {
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 24px;
   font-weight: 700;
   color: $black;
@@ -56,6 +56,11 @@
   .reviews__wrapper {
     margin: 80px 50px 90px 0;
     padding: 80px 0 50px 50px;
+  }
+
+  .reviews__title {
+    font-size: $font-size--md-title;
+    line-height: 50px;
   }
 
   .reviews__list {
@@ -87,5 +92,10 @@
     width: $content-desktop - 175px;
     margin: 80px auto 150px;
     padding: 70px 0 90px 175px;
+  }
+
+  .reviews__title {
+    font-size: $font-size--lg-title;
+    line-height: 57px;
   }
 }

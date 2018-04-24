@@ -10,7 +10,7 @@
   padding: 25px;
   padding-right: auto;
 
-  font-size: $font-size--btn + 2px;
+  font-size: $font-size--md + 2px;
   line-height: 24px;
   font-weight: 700;
   color: $text-color--invert;
@@ -49,6 +49,9 @@
   .category__link {
     padding: 35px;
     padding-right: auto;
+
+    font-size: $font-size--lg;
+    line-height: $line-height;
   }
 
   .category__title {

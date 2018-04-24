@@ -13,7 +13,7 @@
   margin: 0;
   margin-bottom: 40px;
 
-  font-size: $font-size--h2 - 7px;
+  font-size: $font-size--md + 1px;
   color: $text-color--title;
 }
 
@@ -53,6 +53,9 @@
   .contacts__title {
     width: 100%;
     margin-bottom: 40px;
+
+    font-size: $font-size--md-title;
+    color: 50px;
   }
 
   .contacts__item {
@@ -72,6 +75,11 @@
     width: $content-desktop - 175px;
     margin: 70px auto;
     padding-left: 175px;
+  }
+
+  .contacts__title {
+    font-size: $font-size--lg-title;
+    color: 57px;
   }
 
   .contacts__list {

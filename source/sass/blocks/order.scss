@@ -14,7 +14,7 @@
 .order__legend {
   padding: 20px 0;
 
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -37,28 +37,28 @@
 }
 
 .field-radio__label {
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 18px;
   font-weight: 700;
   color: $text-color--title;
 }
 
 .field-checkbox__label {
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 18px;
   font-weight: 700;
   color: $text-color--title;
 }
 
 .field-text__label {
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 18px;
   font-weight: 700;
   color: $text-color--title;
 }
 
 .field-text__caption {
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -68,7 +68,7 @@
 .field-text__value {
   width: 100%;
 
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 18px;
 
   border: none;
@@ -86,7 +86,7 @@
   padding: 15px;
   box-sizing: border-box;
 
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 18px;
 
   border: 2px solid $black;
@@ -98,7 +98,7 @@
 }
 
 .order__note {
-  font-size: $font-size--small + 1px;
+  font-size: $font-size--sm - 1px;
   line-height: 16px;
 }
 
@@ -106,8 +106,8 @@
   margin: 30px 0 55px;
 
   font-family: $font-family;
-  font-size: $font-size--btn;
-  line-height: 20px;
+  font-size: $font-size--md;
+  line-height: 16px;
   color: $gray--dark;
 }
 
@@ -147,6 +147,18 @@
     width: 500px;
   }
 
+  .field-radio__label {
+    font-size: $font-size--lg - 1px;
+  }
+
+  .field-checkbox__label {
+    font-size: $font-size--lg - 1px;
+  }
+
+  .field-text__label {
+    font-size: $font-size--lg - 1px;
+  }
+
   .order__item {
     padding: 10px 0;
   }
@@ -170,6 +182,14 @@
     width: 167px;
   }
 
+  .field-text__value {
+    font-size: $font-size--lg - 1px;
+  }
+
+  .field-text__area {
+    font-size: $font-size--lg - 1px;
+  }
+
   .order__name .field-text__value {
     margin-left: 25px;
   }
@@ -182,6 +202,9 @@
     margin-top: 50px;
     margin-left: auto;
     order: 2;
+
+    font-size: $font-size--md;
+    line-height: $line-height;
   }
 }
 

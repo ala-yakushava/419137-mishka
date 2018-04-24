@@ -1,7 +1,6 @@
 .site-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -18,7 +17,7 @@
   padding: 25px;
   padding-left: 75px;
 
-  font-size: $font-size--btn;
+  font-size: $font-size--md;
   line-height: 24px;
   font-weight: 700;
   color: $black;
@@ -47,9 +46,7 @@
 
   .site-list__link {
     padding: 25px 0;
-
-    font-size: $font-size;
-    line-height: 24px;
+    font-size: $font-size--sm;
   }
 }
 
@@ -58,5 +55,13 @@
     &--md-hide {
       display: block;
     }
+  }
+
+  .site-list__link {
+    font-size: $font-size--md;
+  }
+
+  .site-list__item--md-hide .site-list__link {
+    font-size: $font-size--sm;
   }
 }

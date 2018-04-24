@@ -19,11 +19,14 @@ $text-color--muted:    $color-main--light;
 $text-color--invert:   $white;
 
 // Шрифты
-$font-size:            15px;
-$font-size--h1:        27px;
-$font-size--h2:        25px;
-$font-size--btn:       17px;
-$font-size--small:     13px;
+$font-size--xsm:       13px;
+$font-size--sm:        15px;
+$font-size--md:        17px;
+$font-size--lg:        20px;
+
+$font-size--sm-title:  25px;
+$font-size--md-title:  43px;
+$font-size--lg-title:  53px;
 
 $line-height:          30px;
 
