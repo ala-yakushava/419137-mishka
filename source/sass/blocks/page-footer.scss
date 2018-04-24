@@ -35,12 +35,12 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 50px;
+    padding: 20px 0;
   }
 
   .page-footer__item {
-    padding: 45px 0;
-
     border-bottom: none;
 
     &--sm-hide {
