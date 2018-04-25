@@ -9,30 +9,39 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="page-header__site-nav">
+          <ul class="page-header__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Поиск по сайту</a>
+            <li class="site-list__item site-list__item--md-hide">
+              <a class="site-list__link" href="#">Новые поступления</a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            <li class="site-list__item site-list__item--md-hide">
+              <a class="site-list__link" href="#">Распродажа</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+        <ul class="page-header__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="user-list__item user-list__item--sm-hide">
+            <a class="user-list__link user-list__link--free" href="#">Бесплатная доставка по России</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="page-main">
@@ -42,39 +51,43 @@
       <div class="category">
         <ul class="category__list">
           <li class="category__item">
-            <a class="category__link category__link--interior" href="#">Предметы интерьера</a>
+            <a class="category__link category__link--interior" href="#"><b class="category__title">Предметы интерьера</b></a>
           </li>
           <li class="category__item">
-            <a class="category__link category__link--toys" href="#">Детские игрушки</a>
+            <a class="category__link category__link--toys" href="#"><b class="category__title">Детские игрушки</b></a>
           </li>
         </ul>
       </div>
 
       <section class="best-sale">
-        <header class="best-sale__header">
-          <h2 class="best-sale__title">Вязаные корзинки</h2>
-          <b class="best-sale__specialty">товар недели</b>
-        </header>
-        <div class="best-sale__intro">
-          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="best-sale__wrapper">
+          <header class="best-sale__header">
+            <h2 class="best-sale__title">Вязаные корзинки</h2>
+            <b class="best-sale__specialty">товар недели</b>
+          </header>
+          <img class="best-sale__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <div class="best-sale__intro">
+            <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="best-sale__table table">
+              <tr>
+                <td class="table__field">Цвет:</td>
+                <td class="table__value">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="table__field">Диаметр:</td>
+                <td class="table__value">25 см</td>
+              </tr>
+              <tr>
+                <td class="table__field">Высота:</td>
+                <td class="table__value">15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="best-sale__footer">
+            <b class="best-sale__price">Цена: 990 руб.</b>
+            <a class="best-sale__order button" href="#">Заказать</a>
+          </div>
         </div>
-        <table class="best-sale__table table">
-          <tr>
-            <td class="table__field">Цвет:</td>
-            <td class="table__value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="table__field">Диаметр:</td>
-            <td class="table__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="table__field">Высота:</td>
-            <td class="table__value">15 см</td>
-          </tr>
-        </table>
-        <img class="best-sale__image" src="#" width="100" height="100" alt="Вязаные корзинки">
-        <b class="best-sale__price">Цена: 990 руб.</b>
-        <a class="best-sale__order button" href="#">Заказать</a>
       </section>
 
       <section class="features">
@@ -90,6 +103,8 @@
             <li class="features__item features__item--heart">
               <b class="features__item-desc">Увеличивает лайки на фотографиях</b>
             </li>
+          </ul>
+          <ul class="features__list">
             <li class="features__item features__item--ball">
               <b class="features__item-desc">Связано вручную с любовью и умилением</b>
             </li>
@@ -127,17 +142,17 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__list">
-            <tr>
-              <td class="contacts__field">e-mail:</td>
-              <td class="contacts__value"><a class="contacts__e-mail" href="#">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td class="contacts__field">адрес:</td>
-              <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-          </table>
+          <address class="contacts__list">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__item">
+              <span class="contacts__field">e-mail:</span>
+              <a class="contacts__e-mail" href="#">info@mimimishkashop.ru</a>
+            </p>
+            <p class="contacts__item">
+              <span class="contacts__field">адрес:</span>
+              г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
+            </p>
+          </address>
           <div class="contacts__map map">
           </div>
           <a class="contacts__write button" href="#">Напишите нам</a>
@@ -147,7 +162,10 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
+        <a class="page-footer__item page-footer__item--sm-hide logo">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+        </a>
+        <div class="page-footer__item social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
@@ -160,7 +178,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+        <div class="page-footer__item">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>

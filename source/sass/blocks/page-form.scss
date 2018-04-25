@@ -1,5 +1,21 @@
 .page-form__intro {
-  padding: 30px;
+  margin: 30px;
+  font-size: $font-size--xsm;
+  line-height: 24px;
+}
 
-  font-size: $font-size--small;
+@media (min-width: $screen-tablet) {
+  .page-form__intro {
+    margin: 80px 50px 60px;
+
+    font-size: $font-size--md;
+    line-height: $line-height;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .page-form__intro {
+    width: 700px;
+    margin: 120px auto 50px;
+  }
 }

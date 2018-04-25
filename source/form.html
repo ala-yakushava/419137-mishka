@@ -9,30 +9,39 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo logo  logo--link" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo logo--link" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="page-header__site-nav">
+          <ul class="page-header__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Поиск по сайту</a>
+            <li class="site-list__item site-list__item--md-hide">
+              <a class="site-list__link" href="#">Новые поступления</a>
             </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="#">Корзина: пока пуста</a>
+            <li class="site-list__item site-list__item--md-hide">
+              <a class="site-list__link" href="#">Распродажа</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+        <ul class="page-header__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+          <li class="user-list__item user-list__item--sm-hide">
+            <a class="user-list__link user-list__link--free" href="#">Бесплатная доставка по России</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="page-form">
@@ -44,9 +53,9 @@
       </div>
 
       <form class="order" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="order__fieldset">
+        <div class="order__fieldset">
           <legend class="order__legend">Тип</legend>
-          <ul class="order__list">
+          <ul class="order__list order__radio">
             <li class="order__item field-radio">
               <input class="field-radio__control visually-hidden" type="radio" name="type" value="Аксессуар для интерьера" id="interior" checked>
               <label class="field-radio__label" for="interior">Аксессуар для интерьера</label>
@@ -56,10 +65,10 @@
               <label class="field-radio__label" for="toy">Детская игрушка</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="order__fieldset">
+        </div>
+        <div class="order__fieldset">
           <legend class="order__legend">Цвет</legend>
-          <ul class="order__list">
+          <ul class="order__list order__checkbox">
             <li class="order__item field-checkbox">
               <input class="field-checkbox__control visually-hidden" type="checkbox" name="white" id="white" checked>
               <label class="field-checkbox__label" for="white">Белый</label>
@@ -85,10 +94,10 @@
               <label class="field-checkbox__label" for="orange">Оранжевый</label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="order__fieldset">
+        </div>
+        <div class="order__fieldset">
           <legend class="order__legend">ФИО</legend>
-          <ul class="order__list">
+          <ul class="order__list order__name">
             <li class="order__item field-text">
               <label class="field-text__label" for="first-name">Имя:</label>
               <input class="field-text__value" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*">
@@ -102,27 +111,34 @@
               <input class="field-text__value" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
-        </fieldset>
-        <div class="order__item field-text">
-          <label class="field-text__caption" for="telephone">Тел</label>
-          <input class="field-text__value field-text__value--phone" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХ ХХ*">
         </div>
-        <div class="order__item field-text">
-          <label class="field-text__caption" for="email">E-mail</label>
-          <input class="field-text__value field-text__value--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+        <div class="order__fieldset">
+          <ul class="order__list order__text">
+            <li class="order__item field-text">
+              <label class="field-text__caption" for="telephone">Тел</label>
+              <input class="field-text__value field-text__value--phone" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХ ХХ*">
+            </li>
+            <li class="order__item field-text">
+              <label class="field-text__caption" for="email">E-mail</label>
+              <input class="field-text__value field-text__value--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+            </li>
+          </ul>
         </div>
         <div class="order__item field-text">
           <label class="field-text__caption" for="message">Доп</label>
           <textarea class="field-text__area" name="message" rows="5" cols="25" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <p class="order__note">*Поля обязательны для заполнения</p>
+        <span class="order__note">*Поля обязательны для заполнения</span>
         <button class="order__send button" type="submit">Отправить заказ</button>
       </form>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
+        <a class="page-footer__item page-footer__item--sm-hide logo logo--link" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+        </a>
+        <div class="page-footer__item social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
@@ -135,7 +151,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+        <div class="page-footer__item">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
