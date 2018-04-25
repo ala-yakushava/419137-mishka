@@ -1,0 +1,16 @@
+.field-radio__label {
+  font-size: $font-size--md;
+  line-height: 18px;
+  font-weight: 700;
+  color: $text-color--title;
+}
+
+@media (min-width: $screen-tablet) {
+  .field-radio {
+    padding-left: 70px;
+  }
+
+  .field-radio__label {
+    font-size: $font-size--lg - 1px;
+  }
+}
