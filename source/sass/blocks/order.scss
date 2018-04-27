@@ -189,15 +189,43 @@
 
 @media (min-width: $screen-desktop) {
   .order {
+    margin: 50px auto 30px;
+  }
+
+  .order__fieldset {
     width: $content-desktop;
-    margin: 50px auto;
+
+    &--radio {
+      margin-bottom: 35px;
+
+      .order__legend {
+        margin: 25px 0 0 2px;
+      }
+    }
+
+    &--checkbox {
+      margin: 0 auto;
+      padding: 52px 0 25px;
+    }
+
+    &--name {
+      margin: 50px auto 25px;
+    }
+
+    &--phone {
+      margin: 0 auto 2px;
+      padding: 58px 0 18px;
+    }
   }
 
   .order__legend {
-    width: 175px;
-    padding: 10px 0;
+    width: 113px;
+    margin: 15px 0;
+    padding-left: 61px;
+  }
 
-    text-align: center;
+  .order__item {
+    padding: 18px 0 27px;
   }
 
   .order__radio {
@@ -205,18 +233,28 @@
   }
 
   .order__checkbox {
-    width: 875px;
+    width: 790px;
+
+    .order__item {
+      padding: 8px 0 39px 80px;
+    }
   }
 
   .order__name {
     width: 700px;
   }
 
-  .order__send {
-    margin-left: 175px;
+  .order__phone {
+    width: 875px;
+
+    .order__item {
+      width: 875px;
+      padding: 3px 0 5px;
+    }
   }
 
-  .order__note {
-    margin-right: 175px;
+  .order__footer {
+    width: 700px;
+    padding: 20px 0;
   }
 }

@@ -119,14 +119,37 @@
 }
 
 @media (min-width: $screen-desktop) {
-  .field-text__caption {
-    width: 175px;
-
-    text-align: center;
+  .field-text {
+    &--area {
+      width: 875px;
+      padding-right: 175px;
+      margin: 14px auto 0;
+    }
   }
 
-  .field-text .field-text__value {
-    width: 700px;
+  .field-text__caption {
+    width: 113px;
+    padding: 8px 0 0 61px;
+
+    &--area {
+      padding-top: 34px;
+    }
+  }
+
+  .field-text__label {
+    padding: 4px 0 0 4px;
+  }
+
+  .field-text__value {
+    &--phone {
+      width: 700px;
+      padding: 0 18px 15px;
+    }
+
+    &--email {
+      width: 700px;
+      padding: 0 18px 15px;
+    }
   }
 
   .field-text__area {
