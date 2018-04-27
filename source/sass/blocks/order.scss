@@ -1,23 +1,44 @@
 .order {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 0 30px;
 }
 
 .order__fieldset {
   margin: 0;
   padding: 0;
   border: none;
+
+  &--radio {
+    margin-bottom: 27px;
+  }
+
+  &--checkbox {
+    margin-bottom: 23px;
+  }
+
+  &--name {
+    margin-bottom: 8px;
+  }
+
+  &--phone {
+    margin-bottom: 2px;
+  }
 }
 
 .order__legend {
-  padding: 20px 0;
+  margin: 12px 0 28px;
+  padding: 0;
 
   font-size: $font-size--md;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: $text-color--muted;
+
+  &--name {
+    margin-bottom: 23px;
+  }
 }
 
 .order__list {
@@ -27,11 +48,23 @@
 }
 
 .order__radio {
-  padding-left: 60px;
+  padding-left: 62px;
 }
 
 .order__checkbox {
-  padding-left: 60px;
+  padding-left: 62px;
+}
+
+.order__checkbox .order__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__phone .order__item {
+  margin-bottom: 25px;
 }
 
 .order__note {
