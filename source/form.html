@@ -66,34 +66,36 @@
             </li>
           </ul>
         </div>
-        <div class="order__fieldset order__fieldset--checkbox">
-          <legend class="order__legend">Цвет</legend>
-          <ul class="order__list order__checkbox">
-            <li class="order__item field-checkbox">
-              <input class="field-checkbox__control visually-hidden" type="checkbox" name="white" id="white" checked>
-              <label class="field-checkbox__label" for="white">Белый</label>
-            </li>
-            <li class="order__item field-checkbox">
-              <input class="field-checkbox__control visually-hidden" type="checkbox" name="gray" id="gray" checked>
-              <label class="field-checkbox__label" for="gray">Серый</label>
-            </li>
-            <li class="order__item field-checkbox">
-              <input class="field-checkbox__control visually-hidden" type="checkbox" name="tiffany" id="tiffany" checked>
-              <label class="field-checkbox__label" for="tiffany">«Тиффани»</label>
-            </li>
-            <li class="order__item field-checkbox">
-              <input class="field-checkbox__control visually-hidden" type="checkbox" name="black" id="black">
-              <label class="field-checkbox__label" for="black">Черный</label>
-            </li>
-            <li class="order__item field-checkbox">
-              <input class="field-checkbox__control visually-hidden" type="checkbox" name="pink" id="pink">
-              <label class="field-checkbox__label" for="pink">Розовый</label>
-            </li>
-            <li class="order__item field-checkbox">
-              <input class="field-checkbox__control visually-hidden" type="checkbox" name="orange" id="orange">
-              <label class="field-checkbox__label" for="orange">Оранжевый</label>
-            </li>
-          </ul>
+        <div class="order__wrapper">
+          <div class="order__fieldset order__fieldset--checkbox">
+            <legend class="order__legend">Цвет</legend>
+            <ul class="order__list order__checkbox">
+              <li class="order__item field-checkbox">
+                <input class="field-checkbox__control visually-hidden" type="checkbox" name="white" id="white" checked>
+                <label class="field-checkbox__label" for="white">Белый</label>
+              </li>
+              <li class="order__item field-checkbox">
+                <input class="field-checkbox__control visually-hidden" type="checkbox" name="gray" id="gray" checked>
+                <label class="field-checkbox__label" for="gray">Серый</label>
+              </li>
+              <li class="order__item field-checkbox">
+                <input class="field-checkbox__control visually-hidden" type="checkbox" name="tiffany" id="tiffany" checked>
+                <label class="field-checkbox__label" for="tiffany">«Тиффани»</label>
+              </li>
+              <li class="order__item field-checkbox">
+                <input class="field-checkbox__control visually-hidden" type="checkbox" name="black" id="black">
+                <label class="field-checkbox__label" for="black">Черный</label>
+              </li>
+              <li class="order__item field-checkbox">
+                <input class="field-checkbox__control visually-hidden" type="checkbox" name="pink" id="pink">
+                <label class="field-checkbox__label" for="pink">Розовый</label>
+              </li>
+              <li class="order__item field-checkbox">
+                <input class="field-checkbox__control visually-hidden" type="checkbox" name="orange" id="orange">
+                <label class="field-checkbox__label" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="order__fieldset order__fieldset--name">
           <legend class="order__legend order__legend--name">ФИО</legend>
@@ -112,24 +114,28 @@
             </li>
           </ul>
         </div>
-        <div class="order__fieldset order__fieldset--phone">
-          <ul class="order__list order__phone">
-            <li class="order__item field-text">
-              <label class="field-text__caption" for="telephone">Тел</label>
-              <input class="field-text__value field-text__value--phone" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХ ХХ*">
-            </li>
-            <li class="order__item field-text">
-              <label class="field-text__caption" for="email">E-mail</label>
-              <input class="field-text__value field-text__value--email" type="email" name="email" id="email" placeholder="Ваш Email*">
-            </li>
-          </ul>
+        <div class="order__wrapper">
+          <div class="order__fieldset order__fieldset--phone">
+            <ul class="order__list order__phone">
+              <li class="order__item field-text">
+                <label class="field-text__caption" for="telephone">Тел</label>
+                <input class="field-text__value field-text__value--phone" type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХ ХХ*">
+              </li>
+              <li class="order__item field-text">
+                <label class="field-text__caption" for="email">E-mail</label>
+                <input class="field-text__value field-text__value--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="order__item field-text field-text--area">
-          <label class="field-text__caption" for="message">Доп</label>
+          <label class="field-text__caption field-text__caption--area" for="message">Доп</label>
           <textarea class="field-text__area" name="message" rows="5" cols="25" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
-        <span class="order__note">*Поля обязательны для заполнения</span>
-        <button class="order__send button" type="submit">Отправить заказ</button>
+        <div class="order__footer">
+          <span class="order__note">*Поля обязательны для заполнения</span>
+          <button class="order__send button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </main>
 
