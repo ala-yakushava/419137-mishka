@@ -12,7 +12,7 @@
 .check-size__list {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 22px 0 32px;
   padding: 0;
 
   list-style: none;
@@ -29,7 +29,7 @@
 .check-size__label {
   display: inline-block;
   width: 48px;
-  padding: 15px;
+  padding: 15px 15px 17px;
 
   font-size: $font-size--md;
   line-height: 16px;

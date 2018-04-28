@@ -4,17 +4,26 @@
 }
 
 .contacts__list {
-  margin: 40px 30px;
+  margin: 41px 29px 9px;
 
   font-style: normal;
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 
   font-size: $font-size--md + 1px;
   color: $text-color--title;
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.contacts__field {
+  width: 78px;
 }
 
 .contacts__e-mail {
@@ -40,6 +49,10 @@
 .contacts__write {
   flex-grow: 1;
   margin: 40px 30px;
+  padding: 12px 15px 15px;
+
+  font-size: $font-size--md + 1;
+  line-height: 20px;
 }
 
 @media (min-width: $screen-tablet) {
