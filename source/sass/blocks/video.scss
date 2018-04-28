@@ -38,32 +38,32 @@
 @media (min-width: $screen-tablet) {
   .video__wrapper {
     width: $content-tablet;
-    margin: 55px auto 60px;
+    margin: 54px auto 63px;
   }
 
   .video__player {
     width: $content-tablet;
     height: 455px;
-    margin: 0;
-    margin-bottom: 30px;
     order: 1;
+
+    background-color: $gray--lighten;
   }
 
   .video__title {
-    margin-left: 105px;
+    margin: 35px 105px 20px;
     order: 2;
     font-size: $font-size--lg;
   }
 
   .video__desc {
-    margin: 20px 40px 45px;
+    margin: 0 40px 45px;
 
     font-size: $font-size--sm;
     line-height: $line-height;
   }
 
   .video__order {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
