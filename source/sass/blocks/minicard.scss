@@ -4,17 +4,18 @@
 
 .minicard__image {
   width: 260px;
-  height: 195px;
-  margin-bottom: -10px;
+  height: 194px;
+  margin-bottom: -9px;
 }
 
 .minicard__wrapper {
-  padding: 28px;
+  padding: 26px 28px 25px;
   border: 1px solid $gray--light;
 }
 
 .minicard__title {
   margin: 0;
+  margin-bottom: 5px;
 
   font-size: $font-size--md;
   line-height: 24px;
@@ -35,14 +36,15 @@
 }
 
 .minicard__footer {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 18px;
+  padding-top: 18px;
   border-top: 1px solid $gray--light;
 }
 
 .minicard__price {
   font-size: $font-size--sm;
   line-height: 24px;
+  letter-spacing: 0.05em;
   color: $text-color--title;
 }
 
