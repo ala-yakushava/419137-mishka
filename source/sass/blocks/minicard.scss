@@ -85,7 +85,7 @@
 @media (min-width: $screen-desktop) {
   .minicard {
     display: block;
-    width: 318px;
+    width: 316px;
     height: auto;
   }
 
@@ -94,11 +94,19 @@
     height: 464px;
   }
 
+  .minicard__wrapper {
+    padding: 24px;
+  }
+
   .minicard__header {
-    height: 90px;
+    min-height: 98px;
   }
 
   .minicard__footer {
     margin-top: 0;
+  }
+
+  .minicard__price {
+    margin: 0;
   }
 }

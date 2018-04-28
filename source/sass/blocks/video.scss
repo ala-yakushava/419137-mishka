@@ -71,28 +71,27 @@
   .video__wrapper {
     display: block;
     width: $content-desktop;
-    margin: 55px auto 105px;
+    margin: 2px auto 104px;
   }
 
   .video__player {
     width: 680px;
-    height: 457px;
+    height: 455px;
     margin: 0;
-    margin-right: 75px;
-
+    margin-right: 78px;
     float: left;
   }
 
   .video__title {
-    margin-top: 90px;
+    margin: 95px 70px 20px;
   }
 
   .video__desc {
-    margin: 20px 60px 60px;
+    margin: 20px 60px;
     order: 1;
   }
 
   .video__order {
-    margin-top: 50px;
+    margin-top: 31px;
   }
 }
