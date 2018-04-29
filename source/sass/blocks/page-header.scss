@@ -28,14 +28,17 @@
   .page-header__logo {
     justify-content: flex-start;
     width: 170px;
-    margin-right: 100px;
-
+    margin-right: auto;
     border: none;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 
   .page-header__site-nav {
     order: 3;
-    margin-top: -80px;
+    margin-top: -70px;
   }
 }
 

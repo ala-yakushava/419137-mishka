@@ -36,20 +36,28 @@
   .features__wrapper {
     justify-content: space-between;
     width: $content-tablet;
-    margin: 55px auto 80px;
+    margin: 55px auto 74px;
   }
 
   .features__title {
+    margin: 0 -5px;
     font-size: $font-size--md-title;
     line-height: 50px;
   }
 
   .features__list {
-    width: 300px;
+    width: 295px;
+    padding-right: 39px;
+
+    &--short {
+      width: 240px;
+      padding-right: 94px;
+    }
   }
 
   .features__item {
-    padding-top: 100px;
+    display: flex;
+    padding: 102px 0 10px;
   }
 
   .features__item-desc {

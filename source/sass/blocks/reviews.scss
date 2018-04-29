@@ -64,11 +64,14 @@
 
 @media (min-width: $screen-tablet) {
   .reviews__wrapper {
-    margin: 80px 50px 90px 0;
-    padding: 80px 0 50px 50px;
+    margin: 70px 50px 89px 0;
+    padding: 78px 0 50px 50px;
+
+    background: url("../img/review@1x.jpg") no-repeat 0 0;
   }
 
   .reviews__title {
+    margin-left: -5px;
     font-size: $font-size--md-title;
     line-height: 50px;
   }
@@ -78,11 +81,15 @@
   }
 
   .reviews__text {
-    margin: 50px 0;
+    margin: 38px 0 59px;
   }
 
   .reviews__author {
     margin-right: 340px;
+  }
+
+  .reviews__author-name {
+    letter-spacing: 0.04em;
   }
 
   .reviews__wrapper-btn {
@@ -92,8 +99,11 @@
 
   .reviews__write {
     flex-grow: 0;
+    align-self: flex-start;
     margin-left: auto;
-    padding: 15px 40px;
+    padding: 15px 38px;
+
+    font-size: $font-size--md;
   }
 }
 

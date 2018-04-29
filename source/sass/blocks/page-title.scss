@@ -18,7 +18,7 @@
 @media (min-width: $screen-tablet) {
   .page-title {
     position: relative;
-    top: -60px;
+    top: -68px;
     z-index: -1;
 
     margin-bottom: -68px;
@@ -31,9 +31,7 @@
     border-top: 1px solid $gray--light;
 
     &--image {
-      padding: 140px 70px;
-      padding-bottom: 350px;
-
+      padding: 153px 70px 374px;
       background: url("../img/hero-mobile@1x.jpg") no-repeat center 50px $gray--lightest;
     }
   }

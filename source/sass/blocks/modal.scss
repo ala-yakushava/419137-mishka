@@ -46,13 +46,18 @@
 
 @media (min-width: $screen-tablet) {
   .modal {
-    width: 350px;
+    width: 354px;
     margin: 0 auto;
-    padding: 45px 108px;
+    padding: 33px 106px 45px;
+    border: 1px solid #c7c7c7;
   }
 
   .modal__title {
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 14px;
+
+    font-size: 30px;
+    line-height: 57px;
   }
 }
 
