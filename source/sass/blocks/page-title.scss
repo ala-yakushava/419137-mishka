@@ -39,9 +39,19 @@
 
 @media (min-width: $screen-desktop) {
   .page-title {
+    top: -65px;
+    margin-bottom: -65px;
+    padding-top: 93px;
     padding-bottom: 110px;
 
     font-size: $font-size--lg-title;
     line-height: 57px;
+
+    border-top: 1px solid $gray--light;
+
+    &--image {
+      padding: 155px 70px 358px;
+      background: url("../img/hero-mobile@1x.jpg") no-repeat center 50px $gray--lightest;
+    }
   }
 }

@@ -89,11 +89,12 @@
 @media (min-width: $screen-desktop) {
   .contacts__wrapper {
     width: $content-desktop - 175px;
-    margin: 70px auto;
+    margin: 160px auto 105px;
     padding-left: 175px;
   }
 
   .contacts__title {
+    margin: 3px 0 62px -5px;
     font-size: $font-size--lg-title;
     color: 57px;
   }
@@ -107,6 +108,10 @@
 
   .contacts__item {
     width: 100%;
+
+    &--email {
+      margin-bottom: 30px;
+    }
   }
 
   .contacts__map {
@@ -114,6 +119,6 @@
   }
 
   .contacts__write {
-    margin: -52px  auto 0 0;
+    margin: -53px  auto 0 0;
   }
 }

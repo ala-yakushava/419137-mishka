@@ -69,10 +69,11 @@
 @media (min-width: $screen-desktop) {
   .features__wrapper {
     width: 700px;
-    margin: 60px auto 85px;
+    margin: 60px auto 80px;
   }
 
   .features__title {
+    margin-bottom: 1px;
     font-size: $font-size--lg-title;
     line-height: 57px;
   }
@@ -80,9 +81,14 @@
   .features__list {
     width: 300px;
     padding-right: 50px;
+
+    &--short {
+      width: 240px;
+      padding-right: 110px;
+    }
   }
 
-  .features__item {
-    padding-top: 110px;
+  .features__item-desc {
+    letter-spacing: 0.01em;
   }
 }

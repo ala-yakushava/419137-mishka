@@ -24,3 +24,14 @@
     padding: 10px 0;
   }
 }
+
+@media (min-width: $screen-desktop) {
+  .table__field {
+    width: 99px;
+    padding: 8px 0 12px;
+  }
+
+  .table__value {
+    padding: 8px 0 12px;
+  }
+}
