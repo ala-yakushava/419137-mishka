@@ -9,7 +9,7 @@
 .page-footer__item {
   display: flex;
   justify-content: center;
-  padding: 25px 0;
+  padding: 24px 0;
 
   border-bottom: 2px solid $gray--light;
 
@@ -23,7 +23,7 @@
 }
 
 .page-footer__copyright-link {
-  padding-right: 60px;
+  padding: 4px 60px 9px 0;
 
   font-size: $font-size--lg - 1px;
   line-height: 18px;
@@ -37,7 +37,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 50px;
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
   .page-footer__item {
@@ -47,11 +47,15 @@
       display: flex;
     }
   }
+
+  .page-footer__copyright-link {
+    padding: 0 56px 0 0;
+  }
 }
 
 @media (min-width: $screen-desktop) {
   .page-footer__wrapper {
     width: $content-desktop;
-    margin: 100px auto 0;
+    margin: 30px auto 0;
   }
 }

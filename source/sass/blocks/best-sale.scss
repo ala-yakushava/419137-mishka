@@ -1,12 +1,12 @@
 .best-sale__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 30px;
+  margin: 29px;
   margin-bottom: 70px;
 }
 
 .best-sale__header {
-  margin-bottom: 30px;
+  margin-bottom: 4px;
 }
 
 .best-sale__title {
@@ -24,43 +24,53 @@
   color: $text-color--muted;
 }
 
+.best-sale__intro {
+  line-height: 24px;
+}
+
 .best-sale__image {
   order: 2;
 }
 
 .best-sale__table {
-  margin: 20px 0;
+  margin: 17px -2px 27px;
 }
 
 .best-sale__footer {
   display: flex;
   flex-direction: column;
   order: 2;
-}
-
-.best-sale__price {
-  padding: 20px;
 
   font-size: $font-size--md;
   line-height: 20px;
+}
+
+.best-sale__price {
+  padding: 25px 20px 30px;
+
   font-weight: 700;
   text-align: center;
+}
+
+.best-sale__order {
+  padding: 14px;
 }
 
 @media (min-width: $screen-tablet) {
   .best-sale__wrapper {
     display: block;
     width: $content-tablet;
-    margin: 50px auto 120px;
+    margin: 47px auto 119px;
   }
 
   .best-sale__header {
     display: flex;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .best-sale__title {
+    margin-left: -3px;
     font-size: $font-size--md-title;
     line-height: 50px;
   }
@@ -69,7 +79,7 @@
     display: inline-block;
     width: 125px;
     margin-left: auto;
-    padding: 0 25px;
+    padding: 10px 25px;
     box-sizing: border-box;
 
     line-height: 17px;
@@ -78,16 +88,18 @@
 
   .best-sale__image {
     width: 334px;
-    height: 400px;
+    height: 404px;
+    margin-top: 9px;
     float: right;
   }
 
   .best-sale__intro {
     width: 290px;
+    line-height: 30px;
   }
 
   .best-sale__table {
-    margin: 35px 0;
+    margin: 37px 0;
 
     font-size: $font-size--sm;
     line-height: 20px;
@@ -98,7 +110,7 @@
   }
 
   .best-sale__price {
-    padding: 30px;
+    padding: 18px 0 35px;
 
     font-size: $font-size--lg;
     line-height: 24px;
@@ -108,7 +120,11 @@
 @media (min-width: $screen-desktop) {
   .best-sale__wrapper {
     width: $content-desktop;
-    margin: 130px auto 160px;
+    margin: 125px auto 155px;
+  }
+
+  .best-sale__header {
+    margin-bottom: 49px;
   }
 
   .best-sale__title {
@@ -119,18 +135,19 @@
   }
 
   .best-sale__specialty {
-    margin-left: 0;
+    margin: 0 5px 0 -5px;
     width: 175px;
-    padding: 0 45px;
+    padding: 15px 50px 0;
   }
 
   .best-sale__image {
     position: relative;
-    top: -150px;
+    top: -168px;
     z-index: -1;
 
     width: 525px;
     height: 638px;
+    margin-bottom: -168px;
   }
 
   .best-sale__intro {
@@ -138,10 +155,11 @@
   }
 
   .best-sale__table {
-    margin: 60px 0 100px;
+    margin: 50px 0 88px;
   }
 
   .best-sale__footer {
+    width: 295px;
     margin-left: 175px;
   }
 }

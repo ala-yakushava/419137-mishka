@@ -7,11 +7,17 @@
 
 @media (min-width: $screen-tablet) {
   .field-checkbox {
-    width: 180px;
-    padding-left: 70px;
+    width: 160px;
+    padding-left: 80px;
   }
 
   .field-checkbox__label {
     font-size: $font-size--lg - 1px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .field-checkbox {
+    width: 180px;
   }
 }

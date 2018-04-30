@@ -2,18 +2,25 @@
   display: flex;
   flex-direction: column;
   width: 260px;
-  margin: 30px auto 60px;
+  margin: 30px auto 58px;
 
   border: 1px solid $gray--light;
 }
 
 .video__player {
   order: 2;
+
+  background: url("../img/video-mobile@1x.jpg") no-repeat 0 0 $gray--lighten;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 .video__title {
   order: 1;
-  margin-left: 90px;
+  margin: 23px 0 25px 90px;
 
   font-size: $font-size--md;
   line-height: 24px;
@@ -23,7 +30,7 @@
 .video__desc {
   display: flex;
   flex-direction: column;
-  margin: 20px 30px 30px;
+  margin: 15px 35px 32px;
   order: 3;
 
   font-size: $font-size--xsm;
@@ -31,39 +38,44 @@
 }
 
 .video__order {
-  margin-top: 30px;
+  margin-top: 11px;
   line-height: 16px;
 }
 
 @media (min-width: $screen-tablet) {
   .video__wrapper {
     width: $content-tablet;
-    margin: 55px auto 60px;
+    margin: 54px auto 63px;
   }
 
   .video__player {
     width: $content-tablet;
     height: 455px;
-    margin: 0;
-    margin-bottom: 30px;
     order: 1;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
   }
 
   .video__title {
-    margin-left: 105px;
+    margin: 35px 105px 19px;
     order: 2;
     font-size: $font-size--lg;
   }
 
   .video__desc {
-    margin: 20px 40px 45px;
+    margin: 0 41px 45px;
 
     font-size: $font-size--sm;
     line-height: $line-height;
   }
 
   .video__order {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -71,28 +83,34 @@
   .video__wrapper {
     display: block;
     width: $content-desktop;
-    margin: 55px auto 105px;
+    margin: 2px auto 104px;
   }
 
   .video__player {
     width: 680px;
-    height: 457px;
+    height: 455px;
     margin: 0;
-    margin-right: 75px;
-
+    margin-right: 78px;
     float: left;
+
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
+    }
   }
 
   .video__title {
-    margin-top: 90px;
+    margin: 95px 70px 20px;
   }
 
   .video__desc {
-    margin: 20px 60px 60px;
+    margin: 20px 60px;
     order: 1;
   }
 
   .video__order {
-    margin-top: 50px;
+    margin-top: 31px;
   }
 }

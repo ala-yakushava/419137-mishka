@@ -1,3 +1,11 @@
+.field-text {
+  margin-bottom: 16px;
+
+  &--area {
+    margin-bottom: 8px;
+  }
+}
+
 .field-text__label {
   font-size: $font-size--md;
   line-height: 18px;
@@ -15,12 +23,22 @@
 
 .field-text__value {
   width: 100%;
+  padding: 10px 0 17px;
 
+  font-family: $font-family;
   font-size: $font-size--md;
   line-height: 18px;
 
   border: none;
   border-bottom: 2px solid $black;
+
+  &--phone {
+    padding: 16px 0;
+  }
+
+  &--email {
+    padding: 16px 0;
+  }
 
   &:hover,
   &:focus {
@@ -30,10 +48,12 @@
 
 .field-text__area {
   width: 100%;
-  height: 138px;
-  padding: 15px;
+  height: 143px;
+  margin: 18px 0 0;
+  padding: 14px 15px;
   box-sizing: border-box;
 
+  font-family: $font-family;
   font-size: $font-size--md;
   line-height: 18px;
 
@@ -49,35 +69,87 @@
   .field-text {
     display: flex;
     width: 100%;
+
+    &--area {
+      width: $content-tablet;
+      margin: 21px auto 0;
+    }
   }
 
   .field-text__caption {
     display: block;
     width: 167px;
+    padding-top: 6px;
+
+    &--area {
+      padding-top: 35px;
+    }
   }
 
   .field-text__label {
+    padding-top: 5px;
     font-size: $font-size--lg - 1px;
   }
 
   .field-text__value {
+    padding: 0 15px 13px;
+    box-sizing: border-box;
+
     font-size: $font-size--lg - 1px;
+
+    &--phone {
+      width: 500px;
+      padding: 0 15px 15px;
+
+      background-color: $gray--lighten;
+    }
+
+    &--email {
+      width: 500px;
+      padding: 0 15px 15px;
+
+      background-color: $gray--lighten;
+    }
   }
 
   .field-text__area {
+    width: 500px;
     font-size: $font-size--lg - 1px;
   }
 }
 
 @media (min-width: $screen-desktop) {
-  .field-text__caption {
-    width: 175px;
-
-    text-align: center;
+  .field-text {
+    &--area {
+      width: 875px;
+      padding-right: 175px;
+      margin: 14px auto 0;
+    }
   }
 
-  .field-text .field-text__value {
-    width: 700px;
+  .field-text__caption {
+    width: 113px;
+    padding: 8px 0 0 61px;
+
+    &--area {
+      padding-top: 34px;
+    }
+  }
+
+  .field-text__label {
+    padding: 4px 0 0 4px;
+  }
+
+  .field-text__value {
+    &--phone {
+      width: 700px;
+      padding: 0 18px 15px;
+    }
+
+    &--email {
+      width: 700px;
+      padding: 0 18px 15px;
+    }
   }
 
   .field-text__area {

@@ -1,0 +1,37 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__field {
+  width: 95px;
+  padding: 7px 3px 9px;
+  border-bottom: 1px solid $gray--light;
+}
+
+.table__value {
+  padding: 7px 0 9px;
+  border-bottom: 1px solid $gray--light;
+}
+
+@media (min-width: $screen-tablet) {
+  .table__field {
+    width: 97px;
+    padding: 10px 0;
+  }
+
+  .table__value {
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .table__field {
+    width: 99px;
+    padding: 8px 0 12px;
+  }
+
+  .table__value {
+    padding: 8px 0 12px;
+  }
+}

@@ -4,17 +4,18 @@
 
 .minicard__image {
   width: 260px;
-  height: 195px;
-  margin-bottom: -10px;
+  height: 194px;
+  margin-bottom: -9px;
 }
 
 .minicard__wrapper {
-  padding: 28px;
+  padding: 26px 28px 25px;
   border: 1px solid $gray--light;
 }
 
 .minicard__title {
   margin: 0;
+  margin-bottom: 5px;
 
   font-size: $font-size--md;
   line-height: 24px;
@@ -35,8 +36,8 @@
 }
 
 .minicard__footer {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 18px;
+  padding-top: 18px;
   border-top: 1px solid $gray--light;
 }
 
@@ -63,9 +64,11 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    padding: 24px 25px;
   }
 
   .minicard__title {
+    width: 240px;
     font-size: $font-size--lg;
   }
 
@@ -74,6 +77,7 @@
   }
 
   .minicard__price {
+    margin-left: 5px;
     font-size: $font-size--md;
   }
 }
@@ -81,7 +85,7 @@
 @media (min-width: $screen-desktop) {
   .minicard {
     display: block;
-    width: 318px;
+    width: 316px;
     height: auto;
   }
 
@@ -90,11 +94,19 @@
     height: 464px;
   }
 
+  .minicard__wrapper {
+    padding: 24px;
+  }
+
   .minicard__header {
-    height: 90px;
+    min-height: 98px;
   }
 
   .minicard__footer {
     margin-top: 0;
+  }
+
+  .minicard__price {
+    margin: 0;
   }
 }

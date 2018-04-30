@@ -1,6 +1,6 @@
 .page-title {
   margin: 0;
-  padding: 70px 35px;
+  padding: 70px 35px 78px;
 
   font-size: $font-size--sm-title + 2px;
   text-align: center;
@@ -9,35 +9,65 @@
   background-color: $gray--lighten;
 
   &--image {
-    padding-bottom: 120px;
+    min-height: 90px;
+    padding-bottom: 122px;
 
     background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px $gray--lightest;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: auto 373px;
+    }
   }
 }
 
 @media (min-width: $screen-tablet) {
   .page-title {
+    position: relative;
+    top: -68px;
+    z-index: -1;
+
+    margin-bottom: -68px;
+    padding-top: 93px;
+    padding-bottom: 82px;
+
     font-size: $font-size--md-title;
     line-height: 50px;
 
+    border-top: 1px solid $gray--light;
+
     &--image {
-      position: relative;
-      top: -70px;
-      z-index: -1;
+      padding: 153px 70px 374px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-position: center 0;
 
-      margin-bottom: -70px;
-      padding: 140px 70px;
-      padding-bottom: 350px;
-
-      background: url("../img/hero-mobile@1x.jpg") no-repeat center 50px $gray--lightest;
-      border-top: 1px solid $gray--light;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: auto 746px;
+      }
     }
   }
 }
 
 @media (min-width: $screen-desktop) {
   .page-title {
+    top: -65px;
+    margin-bottom: -65px;
+    padding-top: 93px;
+    padding-bottom: 110px;
+
     font-size: $font-size--lg-title;
     line-height: 57px;
+
+    border-top: 1px solid $gray--light;
+
+    &--image {
+      padding: 155px 70px 358px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
+    }
   }
 }

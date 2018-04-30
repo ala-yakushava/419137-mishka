@@ -1,5 +1,10 @@
 .modal {
-  padding: 35px 30px 40px;
+  padding: 30px 30px 46px;
+
+  background: $white;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal__form {
@@ -8,8 +13,8 @@
 }
 
 .modal__title {
-  margin: 0;
-  margin-bottom: 20px;
+  width: 150px;
+  margin: 0 auto 13px;
 
   font-size: $font-size--sm-title;
   text-transform: uppercase;
@@ -20,7 +25,7 @@
 .modal__add-order {
   font-family: $font-family;
   font-size: $font-size--md;
-  line-height: 20px;
+  line-height: 16px;
   color: $text-color--invert;
 
   border: 2px solid $color-main--light;
@@ -41,18 +46,17 @@
 
 @media (min-width: $screen-tablet) {
   .modal {
-    width: 350px;
+    width: 354px;
     margin: 0 auto;
-    padding: 45px 108px;
+    padding: 33px 106px 45px;
+    border: 1px solid #c7c7c7;
   }
 
   .modal__title {
-    margin-bottom: 30px;
-  }
-}
+    width: 100%;
+    margin-bottom: 14px;
 
-@media (min-width: $screen-desktop) {
-  .modal__title {
-    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 57px;
   }
 }
