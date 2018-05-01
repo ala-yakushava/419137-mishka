@@ -36,10 +36,7 @@
     border-bottom: 1px solid $color-main--dark;
   }
 
-  &:active {
-    color: rgba($color-main--dark, 0.3);
-    border-bottom: 1px solid rgba($color-main--dark, 0.3);
-  }
+  @include opacity(1, 1, 0.3);
 }
 
 .contacts__map {

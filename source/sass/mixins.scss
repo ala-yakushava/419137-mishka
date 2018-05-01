@@ -78,7 +78,9 @@
   }
 }
 
-@mixin opacity($hover: 0.6, $active: 0.3) {
+@mixin opacity($opacity: 1, $hover: 0.6, $active: 0.3) {
+  opacity: $opacity;
+
   &:hover,
   &:focus {
     opacity: $hover;
