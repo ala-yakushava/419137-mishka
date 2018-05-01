@@ -65,11 +65,14 @@
   }
 
   .contacts__title {
+    position: relative;
     width: 100%;
     margin: 0 0 58px -5px;
 
     font-size: $font-size--md-title;
     color: 50px;
+
+    @include icon-right(-20px, 20px, 47px, 82px, "../img/icon-flag.svg");
   }
 
   .contacts__item {

@@ -1,8 +1,18 @@
 .field-checkbox__label {
+  position: relative;
   font-size: $font-size--md;
   line-height: 18px;
   font-weight: 700;
   color: $text-color--title;
+
+  @include checkbox;
+  @include opacity-icon(1, 1, 0.3);
+  @include color;
+}
+
+.field-checkbox__control:checked + .field-checkbox__label {
+  @include checkbox($black, block);
+  @include color;
 }
 
 @media (min-width: $screen-tablet) {

@@ -22,8 +22,33 @@
 }
 
 .features__item {
+  position: relative;
   display: flex;
   padding-top: 83px;
+
+  &--flower {
+    @include icon-left(35px, 10px, 32px, 37px, "../img/icon-feature-flower.svg");
+  }
+
+  &--price {
+    @include icon-left(20px, 20px, 47px, 27px, "../img/icon-feature-money.svg");
+  }
+
+  &--heart {
+    @include icon-left(20px, 20px, 33px, 28px, "../img/icon-feature-heart.svg");
+  }
+
+  &--ball {
+    @include icon-left(20px, 20px, 34px, 34px, "../img/icon-feature-ball.svg");
+  }
+
+  &--rocket {
+    @include icon-left(20px, 20px, 54px, 23px, "../img/icon-feature-rocket.svg");
+  }
+
+  &--gift {
+    @include icon-left(20px, 20px, 33px, 33px, "../img/icon-feature-gift.svg");
+  }
 }
 
 .features__item-desc {

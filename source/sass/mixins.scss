@@ -1,0 +1,120 @@
+@mixin icon-left($top: 35px, $left: 10px, $width: 54px, $height: 37px, $url: url("../img/icon-feature-heart.svg")) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+
+    width: $width;
+    height: $height;
+    background: url($url) no-repeat 0 0;
+  }
+}
+
+@mixin icon-right($top: 20px, $right: 20px, $width: 60px, $height: 60px, $url: url("../img/icon-feature-heart.svg")) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    right: $right;
+
+    width: $width;
+    height: $height;
+    background: url($url) no-repeat 0 0;
+  }
+}
+
+@mixin radio($color: $black, $check: none) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -60px;
+
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid $color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -40px;
+
+    display: $check;
+    width: 20px;
+    height: 20px;
+
+    background-color: $color-main;
+    border-radius: 50%;
+  }
+}
+
+@mixin checkbox($color: $black, $check: none) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -60px;
+
+    width: 50px;
+    height: 50px;
+    border: 2px solid $color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -60px;
+
+    display: $check;
+    width: 50px;
+    height: 50px;
+    background: url("../img/icon-tick.svg") no-repeat center center;
+  }
+}
+
+@mixin opacity($hover: 0.6, $active: 0.3) {
+  &:hover,
+  &:focus {
+    opacity: $hover;
+  }
+
+  &:active {
+    opacity: $active;
+  }
+}
+
+@mixin opacity-icon($opacity: 0.5, $hover: 0.7, $active: 0.3) {
+  &::before {
+    opacity: $opacity;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: $hover;
+  }
+
+  &:active::before {
+    opacity: $active;
+  }
+}
+
+@mixin color {
+  &::before {
+    border-color: $black;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $color-main;
+  }
+
+  &:active::before {
+    border-color: $black;
+  }
+}
