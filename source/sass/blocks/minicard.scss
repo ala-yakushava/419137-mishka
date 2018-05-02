@@ -1,5 +1,20 @@
 .minicard {
   width: 260px;
+
+  @include user-icon;
+
+  &:hover,
+  &:focus {
+    .minicard__title {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .minicard__title {
+      opacity: 0.3;
+    }
+  }
 }
 
 .minicard__image {
@@ -20,15 +35,6 @@
   font-size: $font-size--md;
   line-height: 24px;
   color: $text-color--title;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .minicard__desc {

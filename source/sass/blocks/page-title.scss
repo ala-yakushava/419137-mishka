@@ -36,6 +36,10 @@
 
     border-top: 1px solid $gray--light;
 
+    &--decor {
+      @include decor-line;
+    }
+
     &--image {
       padding: 153px 70px 374px;
       background-image: url("../img/hero-tablet@1x.jpg");

@@ -29,6 +29,8 @@
   line-height: 18px;
   font-weight: 700;
   color: $black;
+
+  @include footer-icon($color-main--light);
 }
 
 @media (min-width: $screen-tablet) {

@@ -9,12 +9,18 @@
 
 .page-header__toggle {
   position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 2;
 
+  display: block;
   width: 30px;
   height: 30px;
 
+  cursor: pointer;
   border: none;
-  background-color: $white;
+  background: url("../img/icon-menu-open.svg") no-repeat 0 0 $white;
+  background: url("../img/icon-menu-close.svg") no-repeat 0 0 $white;
 }
 
 @media (min-width: $screen-tablet) {
