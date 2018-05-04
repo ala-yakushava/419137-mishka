@@ -1,7 +1,9 @@
 .page-header__logo {
   display: flex;
   justify-content: center;
-  height: 78px;
+  align-items: center;
+  height: 70px;
+  padding-top: 8px;
 
   border-top: 1px solid $gray--light;
   border-bottom: 1px solid $gray--light;
@@ -9,12 +11,24 @@
 
 .page-header__toggle {
   position: absolute;
+  top: 29px;
+  right: 21px;
+  z-index: 2;
 
+  display: block;
   width: 30px;
   height: 30px;
 
+  cursor: pointer;
   border: none;
-  background-color: $white;
+
+  &--open {
+    background: url("../img/icon-menu-close.svg") no-repeat 0 0 $white;
+  }
+
+  &--close {
+    background: url("../img/icon-menu-open.svg") no-repeat 0 0 $white;
+  }
 }
 
 @media (min-width: $screen-tablet) {
@@ -27,6 +41,7 @@
 
   .page-header__logo {
     justify-content: flex-start;
+    align-items: flex-end;
     width: 170px;
     margin-right: auto;
     border: none;
@@ -50,6 +65,7 @@
 
   .page-header__logo {
     justify-content: center;
+    align-items: flex-start;
     order: 2;
     margin: 0;
   }

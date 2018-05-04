@@ -15,13 +15,9 @@
 
   &:hover,
   &:focus {
-    color: $text-color--invert;
-
     border: 2px solid $gray--dark;
     background-color: $gray--dark;
   }
 
-  &:active {
-    color: $gray;
-  }
+  @include text-link;
 }

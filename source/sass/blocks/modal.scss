@@ -33,15 +33,11 @@
 
   &:hover,
   &:focus {
-    color: $text-color--invert;
-
     border: 2px solid $color-main--light;
     background-color: $color-main--light;
   }
 
-  &:active {
-    color: rgba($text-color--invert, 0.3);
-  }
+  @include text-link($white, $white);
 }
 
 @media (min-width: $screen-tablet) {

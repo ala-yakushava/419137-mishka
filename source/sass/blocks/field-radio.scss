@@ -1,9 +1,20 @@
 .field-radio__label {
+  position: relative;
   display: flex;
+
   font-size: $font-size--md;
   line-height: 18px;
   font-weight: 700;
   color: $text-color--title;
+
+  @include radio;
+  @include opacity-icon(1, 1, 0.3);
+  @include color;
+}
+
+.field-radio__control:checked + .field-radio__label {
+  @include radio-check;
+  @include color;
 }
 
 @media (min-width: $screen-tablet) {
@@ -13,5 +24,11 @@
 
   .field-radio__label {
     font-size: $font-size--lg - 1px;
+
+    @include radio(-15px, -80px, 47px);
+  }
+
+  .field-radio__control:checked + .field-radio__label {
+    @include radio-check(1px, -64px, 20px);
   }
 }
