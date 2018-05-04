@@ -9,16 +9,19 @@
 
   &--radio {
     margin-bottom: 13px;
+
     @include line(19px, 200px);
   }
 
   &--checkbox {
     margin-bottom: 24px;
+
     @include line(8px, 200px);
   }
 
   &--name {
     margin-bottom: 7px;
+
     @include line(20px, 200px);
   }
 

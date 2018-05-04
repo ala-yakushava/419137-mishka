@@ -21,8 +21,14 @@
 
   cursor: pointer;
   border: none;
-  background: url("../img/icon-menu-open.svg") no-repeat 0 0 $white;
-  background: url("../img/icon-menu-close.svg") no-repeat 0 0 $white;
+
+  &--open {
+    background: url("../img/icon-menu-close.svg") no-repeat 0 0 $white;
+  }
+
+  &--close {
+    background: url("../img/icon-menu-open.svg") no-repeat 0 0 $white;
+  }
 }
 
 @media (min-width: $screen-tablet) {

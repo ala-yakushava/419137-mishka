@@ -12,6 +12,7 @@
 
   &--area {
     margin-bottom: 5px;
+
     @include line;
   }
 }
@@ -52,7 +53,7 @@
     padding: 16px 0;
   }
 
-  &+svg {
+  & + svg {
     position: absolute;
     top: 40px;
     right: 5px;
@@ -64,7 +65,7 @@
     border-color: $color-main;
     outline: none;
 
-     &+svg {
+    & + svg {
       fill: $color-main--light;
       opacity: 1;
     }
@@ -139,7 +140,7 @@
       background-color: $gray--lighten;
     }
 
-    &+svg {
+    & + svg {
       top: 3px;
       right: 24px;
     }
@@ -184,7 +185,7 @@
       padding: 0 18px 15px;
     }
 
-    &+svg {
+    & + svg {
       right: 6px;
     }
   }

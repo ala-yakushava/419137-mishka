@@ -137,11 +137,11 @@
 
   &:hover,
   &:focus {
-   color: rgba($color-invert, 1);
+    color: rgba($color-invert, 1);
   }
 
   &:active {
-   color: rgba($color-invert, 0.3);
+    color: rgba($color-invert, 0.3);
   }
 }
 
