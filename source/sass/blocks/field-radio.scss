@@ -1,6 +1,7 @@
 .field-radio__label {
   position: relative;
   display: flex;
+
   font-size: $font-size--md;
   line-height: 18px;
   font-weight: 700;
@@ -12,7 +13,7 @@
 }
 
 .field-radio__control:checked + .field-radio__label {
-  @include radio($black, block);
+  @include radio-check;
   @include color;
 }
 
@@ -23,5 +24,11 @@
 
   .field-radio__label {
     font-size: $font-size--lg - 1px;
+
+    @include radio(-15px, -80px, 47px);
+  }
+
+  .field-radio__control:checked + .field-radio__label {
+    @include radio-check(1px, -64px, 20px);
   }
 }

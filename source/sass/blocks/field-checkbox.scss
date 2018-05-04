@@ -11,7 +11,7 @@
 }
 
 .field-checkbox__control:checked + .field-checkbox__label {
-  @include checkbox($black, block);
+  @include checkbox-check;
   @include color;
 }
 
@@ -23,6 +23,12 @@
 
   .field-checkbox__label {
     font-size: $font-size--lg - 1px;
+
+    @include checkbox(-11px, -79px, 49px);
+  }
+
+  .field-checkbox__control:checked + .field-checkbox__label {
+    @include checkbox-check(0, -68px, 30px);
   }
 }
 

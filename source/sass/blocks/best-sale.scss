@@ -6,6 +6,7 @@
 }
 
 .best-sale__header {
+  order: -1;
   margin-bottom: 4px;
 }
 
@@ -25,11 +26,8 @@
 }
 
 .best-sale__intro {
+  order: -1;
   line-height: 24px;
-}
-
-.best-sale__image {
-  order: 2;
 }
 
 .best-sale__table {
@@ -39,14 +37,13 @@
 .best-sale__footer {
   display: flex;
   flex-direction: column;
-  order: 2;
 
   font-size: $font-size--md;
   line-height: 20px;
 }
 
 .best-sale__price {
-  padding: 25px 20px 30px;
+  padding: 15px 20px 30px;
 
   font-weight: 700;
   text-align: center;

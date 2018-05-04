@@ -1,17 +1,24 @@
 .minicard {
   width: 260px;
 
-  @include user-icon;
-
   &:hover,
   &:focus {
     .minicard__title {
       opacity: 0.6;
     }
+
+    .minicard__order {
+      fill: $color-main--light;
+      opacity: 1;
+    }
   }
 
   &:active {
     .minicard__title {
+      opacity: 0.3;
+    }
+
+    .minicard__order {
       opacity: 0.3;
     }
   }
@@ -24,13 +31,13 @@
 }
 
 .minicard__wrapper {
-  padding: 26px 28px 25px;
+  padding: 26px 28px 20px;
   border: 1px solid $gray--light;
 }
 
 .minicard__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 
   font-size: $font-size--md;
   line-height: 24px;
@@ -42,8 +49,9 @@
 }
 
 .minicard__footer {
+  display: flex;
   margin-top: 18px;
-  padding-top: 18px;
+  padding-top: 23px;
   border-top: 1px solid $gray--light;
 }
 
@@ -51,6 +59,11 @@
   font-size: $font-size--sm;
   line-height: 24px;
   color: $text-color--title;
+}
+
+.minicard__order {
+  opacity: 0.2;
+  margin-left: auto;
 }
 
 @media (min-width: $screen-tablet) {

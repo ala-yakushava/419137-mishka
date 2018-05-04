@@ -17,12 +17,12 @@
 
   &--interior {
     background-color: $color-main--light;
-    @include icon-right(20px, 30px, 40px, 63px, "../img/icon-interior.svg");
+    @include icon-right(23px, 35px, 40px, 63px, "../img/icon-interior.svg");
   }
 
   &--toys {
     background-color: $color-main--dark;
-    @include icon-right(20px, 20px, 60px, 60px, "../img/icon-toy.svg");
+    @include icon-right(21px, 27px, 60px, 60px, "../img/icon-toy.svg");
   }
 
   @include text-link($white, $white);
@@ -55,6 +55,16 @@
 
     font-size: $font-size--lg;
     line-height: $line-height;
+
+  &--interior {
+    background-color: $color-main--light;
+    @include icon-right(30px, 35px, 40px, 63px, "../img/icon-interior.svg");
+  }
+
+  &--toys {
+    background-color: $color-main--dark;
+    @include icon-right(30px, 35px, 60px, 60px, "../img/icon-toy.svg");
+  }
   }
 
   .category__title {

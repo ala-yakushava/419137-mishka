@@ -71,7 +71,7 @@
     font-size: $font-size--md-title;
     color: 50px;
 
-    @include icon-right(-20px, 20px, 47px, 82px, "../img/icon-flag.svg");
+    @include icon-right(-25px, -2px, 47px, 82px, "../img/icon-flag.svg");
   }
 
   .contacts__item {
@@ -99,6 +99,8 @@
     margin: 3px 0 62px -5px;
     font-size: $font-size--lg-title;
     color: 57px;
+
+    @include icon-left(-22px, -106px, 47px, 82px, "../img/icon-flag.svg");
   }
 
   .contacts__list {

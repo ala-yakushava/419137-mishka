@@ -55,12 +55,12 @@
   border: 1px solid $gray--light;
 
   &--prev {
-    @include icon-left(10px, 50px, 50px, 26px, "../img/icon-left-arrow.svg");
+    @include icon-left(12px, 37px, 50px, 26px, "../img/icon-left-arrow.svg");
     @include opacity;
   }
 
   &--next {
-    @include icon-left(10px, 50px, 50px, 26px, "../img/icon-right-arrow.svg");
+    @include icon-right(12px, 40px, 50px, 26px, "../img/icon-right-arrow.svg");
     @include opacity;
   }
 }
@@ -111,6 +111,16 @@
   .reviews__wrapper-btn {
     width: 170px;
     margin: -50px 0 0 auto;
+  }
+
+  .reviews__button {
+    &--prev {
+      @include icon-left(5px, 13px, 50px, 26px, "../img/icon-left-arrow.svg");
+    }
+
+    &--next {
+      @include icon-right(5px, 18px, 50px, 26px, "../img/icon-right-arrow.svg");
+    }
   }
 
   .reviews__write {

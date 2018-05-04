@@ -27,27 +27,27 @@
   padding-top: 83px;
 
   &--flower {
-    @include icon-left(35px, 10px, 32px, 37px, "../img/icon-feature-flower.svg");
+    @include icon-left(29px, 8px, 32px, 37px, "../img/icon-feature-flower.svg");
   }
 
   &--price {
-    @include icon-left(20px, 20px, 47px, 27px, "../img/icon-feature-money.svg");
+    @include icon-left(30px, 0, 47px, 27px, "../img/icon-feature-money.svg");
   }
 
   &--heart {
-    @include icon-left(20px, 20px, 33px, 28px, "../img/icon-feature-heart.svg");
+    @include icon-left(35px, 8px, 33px, 28px, "../img/icon-feature-heart.svg");
   }
 
   &--ball {
-    @include icon-left(20px, 20px, 34px, 34px, "../img/icon-feature-ball.svg");
+    @include icon-left(33px, 3px, 34px, 34px, "../img/icon-feature-ball.svg");
   }
 
   &--rocket {
-    @include icon-left(20px, 20px, 54px, 23px, "../img/icon-feature-rocket.svg");
+    @include icon-left(33px, -5px, 54px, 23px, "../img/icon-feature-rocket.svg");
   }
 
   &--gift {
-    @include icon-left(20px, 20px, 33px, 33px, "../img/icon-feature-gift.svg");
+    @include icon-left(31px, 3px, 33px, 33px, "../img/icon-feature-gift.svg");
   }
 }
 
@@ -83,6 +83,30 @@
 
   .features__item {
     padding: 102px 0 10px;
+
+    &--flower {
+      @include icon-left(48px, 8px, 32px, 37px, "../img/icon-feature-flower.svg");
+    }
+
+    &--price {
+      @include icon-left(48px, 0, 47px, 27px, "../img/icon-feature-money.svg");
+    }
+
+    &--heart {
+      @include icon-left(55px, 8px, 33px, 28px, "../img/icon-feature-heart.svg");
+    }
+
+    &--ball {
+      @include icon-left(50px, 3px, 34px, 34px, "../img/icon-feature-ball.svg");
+    }
+
+    &--rocket {
+      @include icon-left(53px, -5px, 54px, 23px, "../img/icon-feature-rocket.svg");
+    }
+
+    &--gift {
+      @include icon-left(49px, 3px, 33px, 33px, "../img/icon-feature-gift.svg");
+    }
   }
 
   .features__item-desc {

@@ -65,12 +65,16 @@
       font-weight: 400;
       color: $text-color;
     }
+
+    svg {
+      top: 35px;
+    }
   }
 }
 
 @media (min-width: $screen-desktop) {
   .user-list {
-    padding-left: 50px;
+    padding-left: 90px;
   }
 
   .user-list__link {

@@ -1,4 +1,4 @@
-@mixin icon-left($top: 35px, $left: 10px, $width: 54px, $height: 37px, $url: url("../img/icon-feature-heart.svg")) {
+@mixin icon-left($top: 33px, $left: 3px, $width: 54px, $height: 37px, $url: url("../img/icon-feature-heart.svg")) {
   &::before {
     content: "";
     position: absolute;
@@ -24,6 +24,19 @@
   }
 }
 
+@mixin line($top: 15px, $width: 200px) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    right: 0;
+
+    width: $width;
+    height: 1px;
+    background-color: $color-main--light;
+  }
+}
+
 @mixin decor-line($bottom: -20px, $left: 0, $width: 100%, $height: 34px, $url: "../img/bg-zigzag-fill.svg") {
   &::after {
     content: "";
@@ -37,56 +50,58 @@
   }
 }
 
-@mixin radio($color: $black, $check: none) {
+@mixin radio($top: -8px, $left: -61px, $radius: 35px) {
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
-    left: -60px;
+    top: $top;
+    left: $left;
 
-    width: 50px;
-    height: 50px;
+    width: $radius;
+    height: $radius;
 
-    border: 2px solid $color;
+    border: 2px solid $black;
     border-radius: 50%;
   }
+}
 
+@mixin radio-check($top: 4px, $left: -49px, $radius: 15px) {
   &::after {
     content: "";
     position: absolute;
-    top: -10px;
-    left: -40px;
+    top: $top;
+    left: $left;
 
-    display: $check;
-    width: 20px;
-    height: 20px;
+    width: $radius;
+    height: $radius;
 
     background-color: $color-main;
     border-radius: 50%;
   }
 }
 
-@mixin checkbox($color: $black, $check: none) {
+@mixin checkbox($top: -8px, $left: -61px, $radius: 35px) {
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
-    left: -60px;
+    top: $top;
+    left: $left;
 
-    width: 50px;
-    height: 50px;
-    border: 2px solid $color;
+    width: $radius;
+    height: $radius;
+    border: 2px solid $black;
   }
+}
 
+@mixin checkbox-check($top: -14px, $left: -66px, $radius: 50px) {
   &::after {
     content: "";
     position: absolute;
-    top: -20px;
-    left: -60px;
+    top: $top;
+    left: $left;
 
-    display: $check;
-    width: 50px;
-    height: 50px;
+    width: $radius;
+    height: $radius;
     background: url("../img/icon-tick.svg") no-repeat center center;
   }
 }
@@ -146,7 +161,12 @@
 }
 
 @mixin user-icon {
+  position: relative;
+
   svg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
     opacity: 0.2;
   }
 
@@ -166,7 +186,9 @@
 }
 
 @mixin footer-icon($fill: $black) {
-  fill: $fill;
+  svg {
+    fill: $fill;
+  }
 
   &:hover,
   &:focus {

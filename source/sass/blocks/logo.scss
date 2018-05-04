@@ -7,3 +7,23 @@
     @include footer-icon;
   }
 }
+
+@media (min-width: $screen-tablet) {
+  &--footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo__image{
+    width: 110px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $screen-desktop) {
+  .logo__image{
+    width: 150px;
+    height: 75px;
+  }
+}
+
