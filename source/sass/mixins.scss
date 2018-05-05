@@ -1,0 +1,205 @@
+@mixin icon-left($top: 33px, $left: 3px, $width: 54px, $height: 37px, $url: url("../img/icon-feature-heart.svg")) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+
+    width: $width;
+    height: $height;
+    background: url($url) no-repeat 0 0;
+  }
+}
+
+@mixin icon-right($top: 20px, $right: 20px, $width: 60px, $height: 60px, $url: url("../img/icon-feature-heart.svg")) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    right: $right;
+
+    width: $width;
+    height: $height;
+    background: url($url) no-repeat 0 0;
+  }
+}
+
+@mixin line($top: 15px, $width: 200px) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    right: 0;
+
+    width: $width;
+    height: 1px;
+    background-color: $color-main--light;
+  }
+}
+
+@mixin decor-line($bottom: -20px, $left: 0, $width: 100%, $height: 34px, $url: "../img/bg-zigzag-fill.svg") {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+
+    width: $width;
+    height: $height;
+    background: url($url) repeat-x 0 0;
+  }
+}
+
+@mixin radio($top: -8px, $left: -61px, $radius: 35px) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+
+    width: $radius;
+    height: $radius;
+
+    border: 2px solid $black;
+    border-radius: 50%;
+  }
+}
+
+@mixin radio-check($top: 4px, $left: -49px, $radius: 15px) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+
+    width: $radius;
+    height: $radius;
+
+    background-color: $color-main;
+    border-radius: 50%;
+  }
+}
+
+@mixin checkbox($top: -8px, $left: -61px, $radius: 35px) {
+  &::before {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+
+    width: $radius;
+    height: $radius;
+    border: 2px solid $black;
+  }
+}
+
+@mixin checkbox-check($top: -14px, $left: -66px, $radius: 50px) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+
+    width: $radius;
+    height: $radius;
+    background: url("../img/icon-tick.svg") no-repeat center center;
+  }
+}
+
+@mixin opacity {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin color {
+  &::before {
+    border-color: $black;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $color-main;
+  }
+
+  &:active::before {
+    border-color: $black;
+  }
+}
+
+@mixin text-link($color: $gray--dark, $color-invert: $white) {
+  color: rgba($color, 1);
+
+  &:hover,
+  &:focus {
+    color: rgba($color-invert, 1);
+  }
+
+  &:active {
+    color: rgba($color-invert, 0.3);
+  }
+}
+
+@mixin opacity-icon($opacity: 0.5, $hover: 0.7, $active: 0.3) {
+  &::before {
+    opacity: $opacity;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: $hover;
+  }
+
+  &:active::before {
+    opacity: $active;
+  }
+}
+
+@mixin user-icon {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    opacity: 0.2;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-main--light;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+@mixin footer-icon($fill: $black) {
+  svg {
+    fill: $fill;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $color-main--darken;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}

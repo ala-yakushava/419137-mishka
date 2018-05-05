@@ -6,6 +6,7 @@
 }
 
 .category__link {
+  position: relative;
   display: flex;
   padding: 26px 28px 29px;
 
@@ -16,15 +17,18 @@
 
   &--interior {
     background-color: $color-main--light;
+
+    @include icon-right(23px, 35px, 40px, 63px, "../img/icon-interior.svg");
   }
 
   &--toys {
     background-color: $color-main--dark;
+
+    @include icon-right(21px, 27px, 60px, 60px, "../img/icon-toy.svg");
   }
 
-  &:active {
-    color: rgba($text-color--invert, 0.3);
-  }
+  @include text-link($white, $white);
+  @include opacity-icon;
 }
 
 .category__title {
@@ -33,7 +37,10 @@
 
 @media (min-width: $screen-tablet) {
   .category {
+    position: relative;
     background-color: $gray--lightest;
+
+    @include decor-line;
   }
 
   .category__list {
@@ -51,6 +58,18 @@
 
     font-size: $font-size--lg;
     line-height: $line-height;
+
+    &--interior {
+      background-color: $color-main--light;
+
+      @include icon-right(30px, 35px, 40px, 63px, "../img/icon-interior.svg");
+    }
+
+    &--toys {
+      background-color: $color-main--dark;
+
+      @include icon-right(30px, 35px, 60px, 60px, "../img/icon-toy.svg");
+    }
   }
 
   .category__title {

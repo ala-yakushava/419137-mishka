@@ -21,14 +21,8 @@
   font-weight: 700;
   color: $black;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  @include opacity;
+  @include user-icon;
 }
 
 @media (min-width: $screen-tablet) {
@@ -71,12 +65,16 @@
       font-weight: 400;
       color: $text-color;
     }
+
+    svg {
+      top: 35px;
+    }
   }
 }
 
 @media (min-width: $screen-desktop) {
   .user-list {
-    padding-left: 50px;
+    padding-left: 90px;
   }
 
   .user-list__link {

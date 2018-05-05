@@ -19,18 +19,21 @@
 }
 
 .video__title {
+  position: relative;
   order: 1;
   margin: 23px 0 25px 90px;
 
   font-size: $font-size--md;
   line-height: 24px;
   color: $text-color--title;
+
+  @include icon-left(6px, -55px, 32px, 32px, "../img/icon-video.svg");
 }
 
 .video__desc {
   display: flex;
   flex-direction: column;
-  margin: 15px 35px 32px;
+  margin: 13px 35px 32px;
   order: 3;
 
   font-size: $font-size--xsm;
@@ -65,6 +68,8 @@
     margin: 35px 105px 19px;
     order: 2;
     font-size: $font-size--lg;
+
+    @include icon-left(-5px, -63px, 32px, 32px, "../img/icon-video.svg");
   }
 
   .video__desc {
@@ -103,6 +108,8 @@
 
   .video__title {
     margin: 95px 70px 20px;
+
+    @include icon-left(-55px, 692px, 32px, 32px, "../img/icon-video.svg");
   }
 
   .video__desc {
