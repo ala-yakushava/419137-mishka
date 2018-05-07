@@ -40,7 +40,17 @@
     position: relative;
     background-color: $gray--lightest;
 
-    @include decor-line;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+
+      width: 100%;
+      height: 20px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+      background-size: $screen-tablet 32px;
+    }
   }
 
   .category__list {
@@ -78,6 +88,14 @@
 }
 
 @media (min-width: $screen-desktop) {
+  .category {
+    &::after {
+      bottom: 0;
+      background-size: 1250px 45px;
+      background-position: -23px 0;
+    }
+  }
+
   .category__list {
     width: $content-desktop;
     margin: 0 auto 70px;
