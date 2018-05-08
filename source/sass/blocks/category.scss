@@ -66,6 +66,7 @@
 
       width: 100%;
       height: 20px;
+
       background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
       background-size: $screen-tablet 32px;
     }
@@ -98,6 +99,11 @@
 
       @include icon-right(30px, 35px, 60px, 60px, "../img/icon-toy.svg");
     }
+
+    &:hover,
+    &:focus {
+      padding: 28px 35px;
+    }
   }
 
   .category__title {
@@ -121,5 +127,10 @@
 
   .category__link {
     padding-left: 37px;
+
+    &:hover,
+    &:focus {
+      padding-left: 37px;
+    }
   }
 }

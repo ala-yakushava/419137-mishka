@@ -4,13 +4,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: -40px;
+    top: -34px;
     left: 0;
 
     width: 100%;
     height: 20px;
     background: url("../img/bg-zigzag-line.svg") repeat-x 24px 0;
-    background-size: $screen-mobile 21px;
+    background-size: $screen-mobile 5px;
   }
 }
 

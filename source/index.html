@@ -5,6 +5,7 @@
     <title>Интернет-магазин «Мишка»</title>
     <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
 
@@ -69,10 +70,14 @@
       <div class="category">
         <ul class="category__list">
           <li class="category__item">
-            <a class="category__link category__link--interior" href="#"><b class="category__title">Предметы интерьера</b></a>
+            <a class="category__link category__link--interior" href="#">
+              <b class="category__title">Предметы интерьера</b>
+            </a>
           </li>
           <li class="category__item">
-            <a class="category__link category__link--toys" href="#"><b class="category__title">Детские игрушки</b></a>
+            <a class="category__link category__link--toys" href="#">
+              <b class="category__title">Детские игрушки</b>
+            </a>
           </li>
         </ul>
       </div>
@@ -120,24 +125,24 @@
           <h2 class="features__title">Коротко о нас:</h2>
           <ul class="features__list features__list--short">
             <li class="features__item features__item--flower">
-              <b class="features__item-desc">Экологически чистые&nbspматериалы</b>
+              <b class="features__item-desc">Экологически<br>чистые материалы</b>
             </li>
             <li class="features__item features__item--price">
-              <b class="features__item-desc">Скандинавский стиль по&nbspроссийской цене</b>
+              <b class="features__item-desc">Скандинавский стиль<br>по российской цене</b>
             </li>
             <li class="features__item features__item--heart">
-              <b class="features__item-desc">Увеличивает лайки на&nbspфотографиях</b>
+              <b class="features__item-desc">Увеличивает лайки<br>на фотографиях</b>
             </li>
           </ul>
           <ul class="features__list">
             <li class="features__item features__item--ball">
-              <b class="features__item-desc">Связано вручную с любовью&nbspи умилением</b>
+              <b class="features__item-desc">Связано вручную с<br>любовью и умилением</b>
             </li>
             <li class="features__item features__item--rocket">
-              <b class="features__item-desc">Поддержка отечественного производителя</b>
+              <b class="features__item-desc">Поддержка отечественного<br>производителя</b>
             </li>
             <li class="features__item features__item--gift">
-              <b class="features__item-desc">Поставляется в подарочной&nbspупаковке</b>
+              <b class="features__item-desc">Поставляется в<br>подарочной упаковке</b>
             </li>
           </ul>
         </div>
@@ -236,7 +241,7 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="modal__check-size check-size">
-          <legend class="check-size__legend">Выберите размер:</legend>
+          <p class="check-size__legend">Выберите размер:</p>
           <ul class="check-size__list">
             <li class="check-size__item">
               <input class="check-size__field-radio visually-hidden" type="radio" name="size" value="small" id="size-small" checked>
@@ -255,5 +260,7 @@
         <button class="modal__add-order button" type="submit">Добавить</button>
       </form>
     </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
