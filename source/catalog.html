@@ -221,6 +221,30 @@
       </div>
     </footer>
 
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="modal__check-size check-size">
+          <p class="check-size__legend">Выберите размер:</p>
+          <ul class="check-size__list">
+            <li class="check-size__item">
+              <input class="check-size__field-radio visually-hidden" type="radio" name="size" value="small" id="size-small" checked>
+              <label class="check-size__label" for="size-small">S</label>
+            </li>
+            <li class="check-size__item">
+              <input class="check-size__field-radio visually-hidden" type="radio" name="size" value="middle" id="size-middle">
+              <label class="check-size__label" for="size-middle">M</label>
+            </li>
+            <li class="check-size__item">
+              <input class="check-size__field-radio visually-hidden" type="radio" name="size" value="large" id="size-large">
+              <label class="check-size__label" for="size-large">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal__add-order button" type="submit">Добавить</button>
+      </form>
+    </section>
+
     <script src="js/script.js"></script>
   </body>
 </html>
