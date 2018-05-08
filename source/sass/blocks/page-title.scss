@@ -37,7 +37,17 @@
     border-top: 1px solid $gray--light;
 
     &--decor {
-      @include decor-line;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+
+        width: 100%;
+        height: 20px;
+        background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0 $gray--lighten;
+        background-size: $screen-tablet 35px;
+      }
     }
 
     &--image {
@@ -64,6 +74,14 @@
     line-height: 57px;
 
     border-top: 1px solid $gray--light;
+
+    &--decor {
+      &::after {
+        bottom: 0;
+        background-size: $screen-desktop 35px;
+        background-position: 31px 0;
+      }
+    }
 
     &--image {
       padding: 155px 70px 358px;

@@ -5,16 +5,55 @@
   margin: 30px auto 58px;
 
   border: 1px solid $gray--light;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__player {
+  position: relative;
   order: 2;
+
+  width: 260px;
+  height: 150px;
 
   background: url("../img/video-mobile@1x.jpg") no-repeat 0 0 $gray--lighten;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video-mobile@2x.jpg");
     background-size: 260px auto;
+  }
+}
+
+.video__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  display: block;
+  width: 100px;
+  height: 80px;
+
+  cursor: pointer;
+  border: none;
+  background: url("../img/icon-play.svg") no-repeat 0 0;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
   }
 }
 
