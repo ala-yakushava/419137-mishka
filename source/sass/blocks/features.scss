@@ -142,21 +142,28 @@
 @media (min-width: $screen-desktop) {
   .features {
     &::before {
-      top: -85px;
-      left: 50%;
-      transform: translateX(-50%);
-
-      width: $content-desktop;
-      height: 30px;
-
-      background-size: $content-desktop 30px;
-      background-position: 24px 0;
+      display: none;
     }
   }
 
   .features__wrapper {
+    position: relative;
     width: 700px;
     margin: 60px auto 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -85px;
+      left: -175px;
+      right: 0;
+
+      width: $content-desktop;
+      height: 30px;
+
+      background: url("../img/bg-zigzag-line.svg") repeat-x 24px 0;
+      background-size: $content-desktop 30px;
+    }
   }
 
   .features__title {
