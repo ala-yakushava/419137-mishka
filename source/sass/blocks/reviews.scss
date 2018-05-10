@@ -137,6 +137,8 @@
   }
 
   .reviews__button {
+    border: none;
+
     &--prev {
       @include icon-left(5px, 13px, 50px, 26px, "../img/icon-left-arrow.svg");
     }

@@ -24,14 +24,14 @@
   }
 }
 
-@mixin line($top: 15px, $width: 200px) {
+@mixin line($top: 15px, $left: 60px) {
   &::before {
     content: "";
     position: absolute;
     top: $top;
+    left: $left;
     right: 0;
 
-    width: $width;
     height: 1px;
     background-color: $color-main--light;
   }

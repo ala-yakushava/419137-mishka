@@ -7,7 +7,7 @@
   }
 
   &--email {
-    @include line(15px, 180px);
+    @include line(15px, 80px);
   }
 
   &--area {
@@ -97,11 +97,13 @@
     display: flex;
     width: 100%;
 
-    @include line(0, 0);
-
     &--area {
       width: $content-tablet;
       margin: 21px auto 0;
+    }
+
+    &::before {
+      display: none;
     }
   }
 
