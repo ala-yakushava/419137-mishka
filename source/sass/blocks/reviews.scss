@@ -161,22 +161,29 @@
 @media (min-width: $screen-desktop) {
   .reviews {
     &::after {
-      bottom: -95px;
-      left: 50%;
-      transform: translateX(-50%);
-
-      width: $content-desktop;
-      height: 30px;
-
-      background-size: $content-desktop 30px;
-      background-position: 24px 0;
+      display: none;
     }
   }
 
   .reviews__wrapper {
+    position: relative;
     width: $content-desktop - 175px;
     margin: 80px auto 163px;
     padding: 70px 0 90px 174px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -95px;
+      left: 0;
+      right: 0;
+
+      width: $content-desktop;
+      height: 30px;
+
+      background: url("../img/bg-zigzag-line.svg") repeat-x 24px 0;
+      background-size: $content-desktop 30px;
+    }
   }
 
   .reviews__title {
