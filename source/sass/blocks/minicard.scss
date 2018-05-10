@@ -4,27 +4,10 @@
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-
-    .minicard__title {
-      opacity: 0.6;
-    }
-
-    .minicard__order {
-      fill: $color-main--light;
-      opacity: 1;
-    }
   }
 
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-
-    .minicard__title {
-      opacity: 0.3;
-    }
-
-    .minicard__order {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -46,6 +29,15 @@
   font-size: $font-size--md;
   line-height: 24px;
   color: $text-color--title;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .minicard__desc {
@@ -68,6 +60,16 @@
 .minicard__order {
   opacity: 0.2;
   margin-left: auto;
+
+  &:hover,
+  &:focus {
+    fill: $color-main--light;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $screen-tablet) {

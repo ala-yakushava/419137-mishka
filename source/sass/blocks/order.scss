@@ -10,19 +10,19 @@
   &--radio {
     margin-bottom: 13px;
 
-    @include line(19px, 200px);
+    @include line(19px, 60px);
   }
 
   &--checkbox {
     margin-bottom: 24px;
 
-    @include line(8px, 200px);
+    @include line(8px, 60px);
   }
 
   &--name {
     margin-bottom: 7px;
 
-    @include line(20px, 200px);
+    @include line(20px, 60px);
   }
 
   &--phone {
@@ -105,16 +105,17 @@
 
   .order__wrapper {
     width: 100%;
-
     background-color: $gray--lighten;
+
+    &--area {
+      background-color: $white;
+    }
   }
 
   .order__fieldset {
     display: flex;
     width: $content-tablet;
     margin: 0 auto;
-
-    @include line(0, 0);
 
     &--radio {
       margin-bottom: 23px;
@@ -132,6 +133,10 @@
     &--phone {
       margin-bottom: 2px;
       padding: 58px 0 16px;
+    }
+
+    &::before {
+      display: none;
     }
   }
 
