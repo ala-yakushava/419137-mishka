@@ -28,13 +28,22 @@
     z-index: -1;
 
     margin-bottom: -68px;
-    padding-top: 93px;
+    padding-top: 94px;
     padding-bottom: 82px;
 
     font-size: $font-size--md-title;
     line-height: 50px;
 
-    border-top: 1px solid $gray--light;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: 1px;
+      background-color: #dfdfdf;
+    }
 
     &--decor {
       &::after {
@@ -51,6 +60,10 @@
     }
 
     &--image {
+      &::before {
+        background-color: $gray--light;
+      }
+
       padding: 153px 70px 374px;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: center 0;
@@ -67,13 +80,15 @@
   .page-title {
     top: -65px;
     margin-bottom: -65px;
-    padding-top: 93px;
     padding-bottom: 110px;
 
     font-size: $font-size--lg-title;
     line-height: 57px;
 
-    border-top: 1px solid $gray--light;
+    &::before {
+      width: 1150px;
+      margin: 0 auto;
+    }
 
     &--decor {
       &::after {
