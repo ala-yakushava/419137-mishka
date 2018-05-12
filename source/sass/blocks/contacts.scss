@@ -48,7 +48,7 @@
 
 .contacts__write {
   flex-grow: 1;
-  margin: 40px 30px;
+  margin: 38px 30px;
   padding: 12px 15px 15px;
 
   font-size: $font-size--md + 1;
@@ -61,7 +61,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     width: 100%;
-    margin: 60px 50px 58px;
+    margin: 60px 50px 55px;
   }
 
   .contacts__title {
@@ -72,7 +72,7 @@
     font-size: $font-size--md-title;
     color: 50px;
 
-    @include icon-right(-25px, -2px, 47px, 82px, "../img/icon-flag.svg");
+    @include icon-right(-27px, -2px, 47px, 82px, "../img/icon-flag.svg");
   }
 
   .contacts__item {

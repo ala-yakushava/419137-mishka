@@ -16,7 +16,7 @@
   &--checkbox {
     margin-bottom: 24px;
 
-    @include line(8px, 60px);
+    @include line(6px, 60px);
   }
 
   &--name {
@@ -63,7 +63,7 @@
   padding-left: 62px;
 
   .order__item {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 
     &:last-child {
       margin-bottom: 0;
@@ -123,7 +123,7 @@
 
     &--checkbox {
       margin: 0 auto;
-      padding: 52px 0 28px;
+      padding: 50px 0 28px;
     }
 
     &--name {
@@ -221,7 +221,7 @@
     width: $content-desktop;
 
     &--radio {
-      margin-bottom: 35px;
+      margin-bottom: 33px;
 
       .order__legend {
         margin: 25px 0 0 2px;
@@ -262,7 +262,7 @@
   }
 
   .order__checkbox {
-    width: 785px;
+    width: 787px;
 
     .order__item {
       padding: 8px 0 39px 80px;
