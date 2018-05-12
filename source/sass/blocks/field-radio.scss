@@ -8,13 +8,24 @@
   color: $text-color--title;
 
   @include radio;
-  @include opacity-icon(1, 1, 0.3);
-  @include color;
 }
 
 .field-radio__control:checked + .field-radio__label {
   @include radio-check;
-  @include color;
+}
+
+.field-radio__control:focus + .field-radio__label,
+.field-radio__control:hover + .field-radio__label {
+  &::before {
+    border-color: $color-main;
+  }
+}
+
+.field-radio__control:active + .field-radio__label {
+  &::before {
+    border-color: $black;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $screen-tablet) {
