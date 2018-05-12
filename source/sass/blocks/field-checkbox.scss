@@ -6,13 +6,24 @@
   color: $text-color--title;
 
   @include checkbox;
-  @include opacity-icon(1, 1, 0.3);
-  @include color;
 }
 
 .field-checkbox__control:checked + .field-checkbox__label {
   @include checkbox-check;
-  @include color;
+}
+
+.field-checkbox__control:focus + .field-checkbox__label,
+.field-checkbox__control:hover + .field-checkbox__label {
+  &::before {
+    border-color: $color-main;
+  }
+}
+
+.field-checkbox__control:active + .field-checkbox__label {
+  &::before {
+    border-color: $black;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $screen-tablet) {
