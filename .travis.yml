@@ -5,3 +5,14 @@ node_js:
 
 notifications:
   email: false
+
+script:
+  - npm run build # Запускаем продакшен-сборку, скрипт из `package.json`
+
+deploy:
+  provider: pages # Используем возможности GithubPages
+  skip_cleanup: true # Не чистим рабочую директорию
+  # GITHUB_TOKEN — код, обеспечивающий интеграцию Тревиса и Гитхаба.
+  # Нужно сгенерировать тут: https://github.com/settings/tokens и добавить в настройки репозитория в Тревисе
+  github_token: $GITHUB_TOKEN
+  local_dir: build # название директории, из которой будут отдаваться файлы на сервере
